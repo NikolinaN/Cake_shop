@@ -178,7 +178,6 @@ section {
 }
 
 .btn {
-    font-weight: ;
     font-size: 1.8em;
     color: #000;
     background: #ffffff;
@@ -301,14 +300,6 @@ na **quote** width promeniti u max-width da bi text bio responsive sto znaci u o
 number ide absolute
 left 50% i margin-left:-31px (minus polovina tog bloka) ili transform: translatex(-50%) --dva nacina pozicioniranja-- **na ornamer u kockici**
 !!!maknuti hight i width svugde
-.number
-position:absolute
-bottom:-11px;
-top:auto;
-margin:0;
-left:50%;
-margin-left:-4px;
-background-color:#f3edee;
 */
 
 .ordering {
@@ -328,7 +319,7 @@ background-color:#f3edee;
 
  .ordering-quote {
     font-family: 'Faustina',serif;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     font-style: italic;
     color: #1d1d1d;
@@ -590,12 +581,7 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 768px) {
- .quote {
-     left: 120px;
- }
 
-}
 
 @media only screen and (min-width: 1024px) {
     /*========== HEADER ==========*/
@@ -642,10 +628,48 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
 
 /* ========== HERO SECTION ==========*/
 
-
 /* ========== HERO SECTION END ==========*/
 
+/* ========== ORDERING PROCESS SECTION ==========*/
+.ordering-quote {
+    font-family: 'Faustina',serif;
+    font-size: 3em;
+}
+/* ========== ORDERING PROCESS SECTION END ==========*/
 
+.our_story .container .img {
+    width: 212.5px;
+    height: 297px;
+    left: -290px;
+    bottom: 516px;
+    clip-path: circle(41% at 50% 50%);
+}
+
+.dot {
+    height: 298px;
+    width: 298px;
+    border-radius: 50%;
+    opacity: .27;
+    bottom: 983px;
+    left: -520px;
+  }
+
+  .dot1 {
+    height: 113px;
+    width: 113px;
+    border-radius: 50%;
+    bottom: 1500px;
+    right: 434px;
+  }
+
+  .dot2 {
+    height: 298px;
+    width: 298px;
+    border-radius: 50%;
+    opacity: .7;
+    bottom: 2135px;
+    left: 650px;
+  }
 
 
 
