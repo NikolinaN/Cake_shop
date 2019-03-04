@@ -265,11 +265,6 @@ na **quote** width promeniti u max-width da bi text bio responsive sto znaci u o
     background-repeat: no-repeat;
 }
 
-section .hero {
-    height: 662px;
-    width: 1338px;
-}
-
 .hero .container {
     height: 606px;
     width: 1335x;
@@ -279,7 +274,7 @@ section .hero {
     position: relative;
     top: 210px;
     left: 60px;
-    width: 700px;
+    max-width: 700px;
 }
 /*obrisati bottom, margin-left, top,
 **html**button ubaciti u klasu quote kako bi padding-left bio za quote i button 
@@ -345,7 +340,9 @@ background-color:#f3edee;
 }
 
 .choose-taste {
+    position: relative;
     display: inline-block;
+    bottom: 43px;
     border: 1px solid #46938e;
     width: 347px;
     height: 229px;
@@ -355,6 +352,10 @@ background-color:#f3edee;
 .choose-taste img {
     position: relative;
     top: -21px;
+    margin-left: 10px;
+    background-color: #f1eaeb;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .choose-taste .img {
@@ -377,13 +378,20 @@ background-color:#f3edee;
 }
 
 .choose-taste .number {
-    position: relative;
-    top: -63px;
-    font-size: 1.8em;
-    font-weight: 700;
+    position: absolute;
+    bottom: -11px;
+    top: auto;
+    margin: 0;
+    left: 50%;
+    margin-left: -4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f1eaeb;
 }
 
 .choose-look {
+    position: relative;
+    bottom: 43px;
     display: inline-block;
     width: 347px;
     height: 229px;
@@ -403,7 +411,14 @@ background-color:#f3edee;
     right: 100px;
     top: -80px;
 }
-
+.choose-look img {
+    position: relative;
+    top: -21px;
+    margin-left: 10px;
+    background-color: #f1eaeb;
+    padding-right: 5px;
+    padding-left: 5px;
+}
 .choose-look h4 {
     position: relative;
     top: -13px;
@@ -418,13 +433,20 @@ background-color:#f3edee;
 }
 
 .choose-look .number {
-    position: relative;
-    top: -63px;
-    font-size: 1.8em;
-    font-weight: 700;
+    position: absolute;
+    bottom: -11px;
+    top: auto;
+    margin: 0;
+    left: 50%;
+    margin-left: -4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f1eaeb;
 }
 
 .delivery {
+    position: relative;
+    bottom: 43px;
     display: inline-block;
     width: 347px;
     height: 229px;
@@ -435,6 +457,10 @@ background-color:#f3edee;
 .delivery img {
     position: relative;
     top: -21px;
+    margin-left: 10px;
+    background-color: #f1eaeb;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .delivery .img {
@@ -446,7 +472,6 @@ background-color:#f3edee;
 .delivery h4 {
     position: relative;
     top: -13px;
-    left: 17px;
 }
 
 .delivery p {
@@ -457,10 +482,15 @@ background-color:#f3edee;
 }
 
 .delivery .number {
-    position: relative;
-    top: -63px;
-    font-size: 1.8em;
-    font-weight: 700;
+    position: absolute;
+    bottom: -11px;
+    top: auto;
+    margin: 0;
+    left: 50%;
+    margin-left: -4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #f1eaeb;
 }
 
 .description {
