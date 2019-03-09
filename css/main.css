@@ -539,8 +539,8 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
 }
 
 .dot {
-    height: 596px;
-    width: 596px;
+    height: 298px;
+    width: 298px;
     background-color: #46938e;
     border-radius: 50%;
     opacity: .27;
@@ -551,8 +551,8 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
   }
 
   .dot1 {
-    height: 226px;
-    width: 226px;
+    height: 113px;
+    width: 113px;
     background-color: #46938e;
     border-radius: 50%;
     opacity: .2;
@@ -563,15 +563,7 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
   }
 
   .dot2 {
-    height: 596px;
-    width: 596px;
-    background-color: #46938e;
-    border-radius: 50%;
-    opacity: .7;
-    display: inline-block;
-    position: relative;
-    bottom: 2135px;
-    left: 650px;
+    display: none;
   }
 
 /* ========== OUR STORY END ==========*/
@@ -637,40 +629,41 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
 }
 /* ========== ORDERING PROCESS SECTION END ==========*/
 
-.our_story .container .img {
-    width: 212.5px;
-    height: 297px;
-    left: -290px;
-    bottom: 516px;
-    clip-path: circle(41% at 50% 50%);
-}
-
 .dot {
-    height: 298px;
-    width: 298px;
+    height: 596px;
+    width: 596px;
+    background-color: #46938e;
     border-radius: 50%;
     opacity: .27;
+    display: inline-block;
+    position: relative;
     bottom: 983px;
     left: -520px;
   }
 
   .dot1 {
-    height: 113px;
-    width: 113px;
+    height: 226px;
+    width: 226px;
+    background-color: #46938e;
     border-radius: 50%;
+    opacity: .2;
+    display: inline-block;
+    position: relative;
     bottom: 1500px;
     right: 434px;
   }
 
   .dot2 {
-    height: 298px;
-    width: 298px;
+    height: 596px;
+    width: 596px;
+    background-color: #46938e;
     border-radius: 50%;
     opacity: .7;
+    display: inline-block;
+    position: relative;
     bottom: 2135px;
     left: 650px;
   }
-
 
 
 
