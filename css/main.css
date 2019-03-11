@@ -260,11 +260,7 @@ nav .close {
 }
 /*============ HEADER END ===========*/
 
-/* ========== HERO SECTION ==========*/
-/* na hero ne ide visina, ako hocemo da bude responsive
-zakucati odredjenu sirinu..
-na **quote** width promeniti u max-width da bi text bio responsive sto znaci u ovom slucaju da se siri do 700px ali posle toga nema nista, to postizemo samo sa max-width
-*/
+/* ========== HERO ==========*/
 .hero {
     background-image: url('../img/background.jpg');
     background-repeat: no-repeat;
@@ -299,15 +295,9 @@ na **quote** width promeniti u max-width da bi text bio responsive sto znaci u o
     padding-top: 1px;
     top: 170px;
 }
-/* ========== HERO SECTION END ==========*/
+/* ========== HERO END ==========*/
 
 /* ========== ORDERING PROCESS ==========*/
-/*ako su childovi absolute parent mora biti relative
-number ide absolute
-left 50% i margin-left:-31px (minus polovina tog bloka) ili transform: translatex(-50%) --dva nacina pozicioniranja-- **na ornamer u kockici**
-!!!maknuti hight i width svugde
-*/
-
 .ordering {
     background-color: #f1eaeb;
     position: relative;
@@ -388,12 +378,6 @@ left 50% i margin-left:-31px (minus polovina tog bloka) ili transform: translate
 /* ========== ORDERING PROCESS END ==========*/
 
 /* ========== OUR STORY ==========*/
-/*overflow:hidden na sekciju da sve sto se preliva nestane
-sliku staviti u poseban div **html** a sliku i krugove u novi div 
-krugovima dati position absolute  **css**
-dodati z-index na sliku npr 2, sto veci index to element ide iznad svih
-inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvajati elemente
-*/
 .our_story .container {
     width: 1338px;
     padding-top: 140px;
@@ -480,6 +464,22 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
 
 /* ========== OUR STORY END ==========*/
 
+/* ========== GALLERY ==========*/
+.gallery li {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery li img {
+    width: 100%;
+    height: auto;
+    /*top: 50%;
+    transform: translateY(-50%)*/
+}
+/* ========== GALLERY END ==========*/
+
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
@@ -529,16 +529,28 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
     }
 /* ========== HEADER END ==========*/
 
-/* ========== HERO SECTION ==========*/
+/* ========== HERO ==========*/
 
-/* ========== HERO SECTION END ==========*/
+/* ========== HERO END ==========*/
 
-/* ========== ORDERING PROCESS SECTION ==========*/
+/* ========== ORDERING PROCESS ==========*/
 .ordering-quote {
     font-family: 'Faustina',serif;
     font-size: 3em;
 }
-/* ========== ORDERING PROCESS SECTION END ==========*/
+/* ========== ORDERING PROCESS END ==========*/
+
+/* ========== OUR STORY END ==========*/
+.content {
+    padding-left: 636px;
+    padding-right: 117px;
+}   
+
+.our_story .container .content img {
+    position: relative;
+    left: -190px;
+    top: -55px;
+}
 
 .our_story .container .img {
     width: 425px;
@@ -547,6 +559,36 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
     bottom: 516px;
     clip-path: circle(41% at 50% 50%);
 }
+
+.our_story .container .content p {
+    font-size: 2.4em;
+    margin: 0;
+    max-width: none;
+    position: relative;
+    top: -10px;
+    text-align: left;
+}
+
+ h6 {
+    position: relative;
+    top: -55px;
+    left: 0;
+    text-align: left;
+ }
+
+ h5 {
+    position: relative;
+    top: -60px;
+    left: 0;
+    text-align: left;
+ }
+
+ .content h2 {
+    position: relative;
+    top: -60px;
+    left: 0;
+    text-align: left;
+ }
 
 .dot {
     height: 596px;
@@ -583,12 +625,8 @@ inline-block uopste ne gleda marginu samo block zato je najbolje paddingom odvaj
     bottom: 2110px;
     left: 650px;
   }
+/* ========== OUR STORY END ==========*/
 }
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -682,23 +720,6 @@ button {
 
 .clearfix:after {
     clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 /* ==========================================================================
