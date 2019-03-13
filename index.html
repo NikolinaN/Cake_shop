@@ -19,30 +19,30 @@
 </head>
 
 <body>
-  <header class="container">
-    <a href="index.html" class="header logo"><img src="img/bakaria-logo.png" alt="Bakaria logo"></a>
-    <nav class="nav">
-      <ul class="unstyle-list">
-        <li><a href="">Home</a></li>
-        <li><a href="">Products</a></li>
-        <li><a href="">Ordering process</a></li>
-        <li><a href="">Our story</a></li>
-        <li><a href="">Gallery</a></li>
-        <li><a href="">Hours &#38; Contact</a></li>
-      </ul>
-    </nav>
+  <header>
+    <div class="container">
+      <a href="index.html" class="header logo"><img src="img/bakaria-logo.png" alt="Bakaria logo"></a>
+      <nav class="nav">
+        <ul class="unstyle-list">
+          <li><a href="">Home</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Ordering process</a></li>
+          <li><a href="">Our story</a></li>
+          <li><a href="">Gallery</a></li>
+          <li><a href="">Hours &#38; Contact</a></li>
+        </ul>
+      </nav>
     
-    <button class="burger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+      <button class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
-  <!--<section>
-    <img src=""></img>
-  </section>-->
-
+  
   <main>
+  <!--Hero-->
     <section class="hero">
       <div class="container">
         <div class="quote">
@@ -50,15 +50,18 @@
       </div>
       <button class="order">Order now</button>
     </section>
-  </main>
+  <!--Hero end-->
 
+  <!--Products-->
   <section class="products text-center">
     <div class="container">
     <img src="img/ornament1.png" alt="Ornament">
     <h2>Products</h2>
   </div>
   </section>
+  <!--Products end-->
 
+  <!--Ordering process-->
   <section class="ordering text-center">
     <div class="container">
       <img src="img/ornament1.png" alt="Ornament">
@@ -90,7 +93,9 @@
     </div>
     </div>
   </section> 
+  <!--Ordering process end-->
   
+  <!--Our story-->
   <section class="our_story text-center">
     <div class="container">
       <div class="content">
@@ -98,7 +103,7 @@
               <span></span>
               <span></span>
               <span></span>
-            </div>
+          </div>
         <img src="img/ornament1.png" alt="Ornament">
         <h2>Our story</h2>
         <h5>Anastasia Lloyd</h5>
@@ -108,9 +113,9 @@
            Pellentesque sagittis, lectus eget suscipit egestas, leo tellus eleifend felis, eu blandit enim quam quis lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
       </div>
         <img class="img" src="img/chef.jpg" alt="Founder and head chef">
-
       </div>
   </section>
+<!--Our story-->
 
 <!--Gallery-->
   <section class="gallery text-center">
@@ -132,33 +137,47 @@
     </section>
   <!--Gallery end-->
 
-    <section class="general-info text-center">
-        <div class="container">
-            <img src="img/ornament1.png" alt="Ornament">
-            <h2>General info.</h2>
-            <ul class="unstyle-list">
-              <li>
-                <p>Bussines hours</p>
-                <p>You can order your cake 6 days</p>
-                <p>(Sunday is a day free)</p>
-                <p>09-18h</p>
-              </li>
-              <li>
-                <p>Adress</p>
-                <p>1281  Doe Meadow Drive</p>
-                <p>Taftville, 06380, Connecticut</p>
-                <p><a href="map">MAP</a></p>
-              </li>
-              <li>
-                <p>Phone and email</p>
-                <p>Call 301 509 3042</p>
-                <p><a href="mailto:bakaria@info.com">bakaria@info.com</a></p>
-                <p>or</p>
-                <a href="javascript;" class="btn reservation">ORDER</a>
-              </li>
-            </ul>
-        </div>
-      </section>
+  <!--General Info-->
+  <section class="general-info text-center">
+      <div class="container">
+          <div class="circle_2">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+          <img src="img/ornament1.png" alt="Ornament">
+          <h2>General info.</h2>
+          <ul class="unstyle-list">
+            <li>
+              <img src="img/business-hours.png" alt="Business hours">
+              <p>Business hours</p>
+              <p>You can order your cake 6 days</p>
+              <p>(Sunday is a day free)</p>
+              <p>09-18h</p>
+            </li>
+            <li>
+              <img src="img/adress.png" alt="Adress">
+              <p>Adress</p>
+              <p>1281  Doe Meadow Drive</p>
+              <p>Taftville, 06380, Connecticut</p>
+              <p><a href="map">MAP</a></p>
+            </li>
+            <li>
+              <img src="img/contact.png" alt="Contact information">
+              <p>Phone and email</p>
+              <p>Call 301 509 3042</p>
+              <p><a href="mailto:bakaria@info.com">bakaria@info.com</a></p>
+              <p>or</p>
+              <a href="javascript;" class="btn reservation">ORDER</a>
+            </li>
+          </ul>
+      </div>
+    </section>
+  <!--General Info end-->
+  </main>
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
