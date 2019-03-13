@@ -162,7 +162,7 @@ h6 {
 }
 
 p {
-    font-size: 1.8em;
+    font-size: 2em;
 }
 
 a {
@@ -372,7 +372,7 @@ nav .close {
 }
 
 .description {
-    font-size: 1.8em;
+    font-size: 2em;
     font-weight: 400;
 }
 /* ========== ORDERING PROCESS END ==========*/
@@ -412,8 +412,6 @@ nav .close {
 .our_story .container .content p {
     position: relative;
     top: 175px;
-    text-align: center;
-    font-size: 2.4em;
     max-width: 300px;
     margin: 0;
 }
@@ -422,63 +420,72 @@ nav .close {
     width: 212.5px;
     height: 297px;
     position: relative;
-    left: -500px;
-    bottom: 610px;
+    left: -505px;
+    bottom: 520px;
     clip-path: circle(41% at 50% 50%);
 }
-
-.dot {
-    height: 298px;
-    width: 298px;
+.circle {
+    position: relative;
+    max-width: 1300px;
+    height: 1px;
+}
+.circle span {
+    position: absolute;
     background-color: #46938e;
     border-radius: 50%;
-    opacity: .27;
-    display: inline-block;
-    position: relative;
-    bottom: 825px;
-    left: -585px;
-  }
-
-  .dot1 {
+    display: block;
+}
+.circle span:first-child {
     height: 113px;
     width: 113px;
-    background-color: #46938e;
-    border-radius: 50%;
     opacity: .2;
-    display: inline-block;
-    position: relative;
-    bottom: 1101px;
-    right: 560px;
-  }
-
-  .dot2 {
+    top: 15px;
+    left: 190px;
+}
+.circle span:nth-child(2) {
     height: 298px;
     width: 298px;
-    background-color: #46938e;
-    border-radius: 50%;
+    opacity: .27;
+    bottom: -400px;
+    left: -145px;
+  }
+  .circle span:last-child {
+    height: 298px;
+    width: 298px;
     opacity: .7;
     bottom: 2135px;
-    left: 650px;
+    right: -50%;
     display: none;
   }
 
 /* ========== OUR STORY END ==========*/
 
 /* ========== GALLERY ==========*/
-.gallery li {
-    height: 0;
-    padding-bottom: 56.25%;
-    overflow: hidden;
+.gallery{
     position: relative;
+    /*padding: 100px 0;*/
+    margin: 0 auto;
 }
 
-.gallery li img {
-    width: 100%;
-    height: auto;
-    /*top: 50%;
-    transform: translateY(-50%)*/
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.images img {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 8px 30px;
 }
 /* ========== GALLERY END ==========*/
+/* ========== GENERAL INFO ==========*/
+.general-info li p:first-child {
+    font-weight: 700;
+    font-size: 2.5em;
+}
+/* ========== GENERAL INFO END ==========*/
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -626,6 +633,26 @@ nav .close {
     left: 650px;
   }
 /* ========== OUR STORY END ==========*/
+/* ========== GALLERY ==========*/
+.gallery{
+    position: relative;
+    padding: 100px 0;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.images img {
+    max-width: 350px;
+    max-height: 350px;
+    padding: 15px;
+}
+/* ========== GALLERY END ==========*/
 }
 
 /* ==========================================================================
