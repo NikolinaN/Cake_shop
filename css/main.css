@@ -106,25 +106,21 @@ body {
     font-weight: 400;
     color: #100c0c;
 }
-
 section {
     padding: 0 35px 50px;
     overflow: hidden;
 }
-
 .container {
     max-width: 1366px;
     padding: 0 10px;
     margin: 0 auto;
 }
-
 h2 {
     font-size: 3.6em;
     font-weight: 700;
     text-transform: uppercase;
     color: #46938e;
 }
-
 h3 {
     font-family: 'Overlock', cursive;
     font-size: 2em;
@@ -132,7 +128,6 @@ h3 {
     font-style: italic;
     color: #ffffff;
 }
-
 h4 {
     font-size: 2.4em;
     font-weight: 400;
@@ -140,27 +135,26 @@ h4 {
     color: #000000;
 
 }
-
 h5{
     font-size: 3em;
     color: #000000;
 }
-
 h6 {
     font-weight: 400;
     font-style: italic;
     font-size: 2em;
     color: #a3a3a3;
 }
-
+small {
+    color: #b9cde2;
+    padding: 15px 0 0;
+}
 p {
     font-size: 2em;
 }
-
 a {
     text-decoration: none;
 }
-
 .btn {
     font-size: 1.8em;
     color: #000;
@@ -172,7 +166,6 @@ a {
 header {
     padding: 13px 0 8px;
 }
-
 nav {
     display: none;
     position: fixed;
@@ -184,12 +177,10 @@ nav {
     text-align: center;
     color: #000000;
 }
-
 nav ul {
     display: table-cell;
     vertical-align: middle;
 }
-
 nav a {
     color: #ffffff;
     font-size: 3.6em;
@@ -197,12 +188,10 @@ nav a {
     line-height: 70px;
     padding: 5px 10px;
 }
-
 nav .btn {
     background: #ffffff;
     font-size: 3.6em;
 }
-
 nav .close {
     width: 45px;
     height: 45px;
@@ -212,11 +201,9 @@ nav .close {
     display: block;
     margin: 0;
 }
-
 .header-logo {
     display: inline-block;
 }
-
 .burger {
     width: 44px;
     height: 25px;
@@ -224,7 +211,6 @@ nav .close {
     float: right;
     margin-top: 12px;
 }
-
 .burger span {
     width: 100%;
     height: 2px;
@@ -232,7 +218,6 @@ nav .close {
     display: block;
     margin-top: 9px;
 }
-
 .burger span:nth-child(1) {
     margin-top: 0;
 }
@@ -243,16 +228,13 @@ nav .close {
     background: url('../img/background.jpg') no-repeat center center;
     background-size: cover;
 }
-
 .hero .container {
     height: 606px;
 }
-
 .quote {
     position: absolute;
     top: 125px;
 }
-
 .order {
     position: relative;
     left: 54px;
@@ -270,20 +252,15 @@ nav .close {
     background-color: #f1eaeb;
     position: relative;
 }
-
 .ordering .container  {
-    /*height: 700px;*//*skloniti da ne bi bili ograniceni ukoliko klijent hoce vise teksta*/
-    /*width: 1338px;*/ /*skloniti da bi dizajn bio responsive*//*ne stavljati sirinu kod mobilne verzije*/
     padding-top: 50px;
 }
-
- .ordering-quote {
+.ordering-quote {
     font-size: 2.5em;
     font-weight: 600;
     font-style: italic;
     color: #1d1d1d;
 }
-
 #ordering-process {
     display: inline-block;
     margin-top: 90px;
@@ -304,17 +281,14 @@ nav .close {
     left: 50%;
     margin-left: -35px;
 }
-
 #ordering-process div h4 {
     display: inline-block;
     vertical-align: middle;
 }
-
 #ordering-process div p {
     margin-top: 0;
     padding-bottom: 20px;
 }
-
 #ordering-process div .number {
     position: absolute;
     bottom: -11px;
@@ -327,7 +301,6 @@ nav .close {
     background-color: #f1eaeb;
     padding-bottom: 0;
 }
-
 .description {
     font-size: 2em;
     font-weight: 400;
@@ -338,41 +311,23 @@ nav .close {
 .our_story .container {
     padding-top: 20px;
 }
-
 .content {
     position: relative;
     padding-right: 0px;
     padding-left: 0px;
-    /*padding-left: 636px;
-    padding-right: 117px;*/
 }   
-
-/*.our_story .container .content img {
-    position: relative;
-    left: -190px;
-}*/
-
-/*.content h2 {
-    text-align: center;
-    max-width: 250px;
-    margin: 0;
-}*/
-
 .content h5 {
     position: relative;
     top: 275px;
 }
-
 .content h6 {
     position: relative;
     top: 240px;
 }
-
 .our_story .container .content p {
     position: relative;
     top: 245px;
 }
-
 .our_story .container .img {
     width: 212.5px;
     height: 297px;
@@ -414,26 +369,22 @@ nav .close {
     right: -50%;
     display: none;
   }
-
 /* ========== OUR STORY END ==========*/
 
 /* ========== GALLERY ==========*/
 .section .gallery {
     padding-bottom: 0;
 }
-
 .gallery{
     position: relative;
     /*padding: 100px 0;*/
     margin: 0 auto;
 }
-
 .images {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
-
 .images img {
     max-width: 350px;
     max-height: 350px;
@@ -445,25 +396,21 @@ nav .close {
     position: relative;
     padding-top: 50px;
 }
-
 .general-info li p:nth-child(2) {
     font-weight: 700;
     font-size: 2.5em;
 }
-
 .circle_2 {
     position: relative;
     max-width: 1300px;
     height: 1px;
 }
-
 .circle_2 span {
     position: absolute;
     border-radius: 50%;
     background-color: #46938e;
     display: block; 
 }
-
 .circle_2 span:first-child {
     width: 184px;
     height: 184px;
@@ -471,7 +418,6 @@ nav .close {
     top: 665px;
     left: -70px;
 }
-
 .circle_2 span:nth-child(2) {
     width: 64px;
     height: 64px;
@@ -480,7 +426,6 @@ nav .close {
     left: 40px;
     display: none;
 }
-
 .circle_2 span:nth-child(3) {
     width: 64px;
     height: 64px;
@@ -488,7 +433,6 @@ nav .close {
     top: 130px;
     left: 200px
 }
-
 .circle_2 span:nth-child(4) {
     width: 167.5px;
     height: 167.5px;
@@ -496,7 +440,6 @@ nav .close {
     top: -50px;
     left: -40px;
 }
-
 .circle_2 span:last-child {
     width: 28.5px;
     height: 28.5px;
@@ -512,22 +455,21 @@ nav .close {
     background-color: #210a12;
     text-align: center;
 }
-.logo-copy-wrap {
-    display: inline-block;
+.logo-wrap {
+    display: grid; /*ne radi inline-block ali grid radi, zasto?*/
 }
 .logo-copy-wrap small {
     display: block;
-    fill: #b9cde2;
 }
 .footer ul {
     padding-top: 20px;
+    display: inline-flex;
 }
-
-.icon {
-    fill: #b9cde2;
+.footer ul li {
+    padding: 10px;
 }
 .footer li a:hover {
-    color: #b9cde2;
+    color: #70c0e5;
 }
 /* ========== FOOTER END ==========*/
 
@@ -605,46 +547,38 @@ nav .close {
 .our_story .container {
     height: 720px;
 }
-
 .content {
     padding-left: 636px;
     padding-right: 50px;
 }   
-
 .our_story .container .content img {
     position: relative;
     left: -200px;
 }
-
 .our_story .container .img {
     width: 425px;
     height: 594px;
     left: -290px;
     bottom: 516px;
 }
-
 .our_story .container .content p {
     font-size: 2.4em;
     max-width: 660px;
     text-align: left;
     top: 0;
 }
-
- .content h6 {
+.content h6 {
     text-align: left;
     top: 0;
  }
-
- .content h5 {
+.content h5 {
     text-align: left;
     top: 0;
  }
-
- .content h2 {
+.content h2 {
      text-align: left;
  }
-
- .circle span:first-child {
+.circle span:first-child {
     height: 226px;
     width: 226px;
     top: 40px;
@@ -672,14 +606,12 @@ nav .close {
     width: 368px;
     height: 368px;
 }
-
 .circle_2 span:nth-child(2) {
     width: 128px;
     height: 128px;
     position: absolute;
     display: block;
 }
-
 .circle_2 span:nth-child(3) {
     width: 128px;
     height: 128px;
@@ -687,7 +619,6 @@ nav .close {
     left: 900px;
     top: -60px;
 }
-
 .circle_2 span:nth-child(4) {
     width: 335px;
     height: 335px;
@@ -695,14 +626,12 @@ nav .close {
     left: 950px;
     top: 100px
 }
-
 .circle_2 span:last-child {
     width: 57px;
     height: 57px;
     position: absolute;
     top: 700px;
 }
-
 .info li {
     display: inline-block;
     width: calc(33.333% - 35px);
