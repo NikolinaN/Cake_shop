@@ -442,6 +442,7 @@ nav .close {
 /* ========== GALLERY END ==========*/
 /* ========== GENERAL INFO ==========*/
 .general-info .container {
+    position: relative;
     padding-top: 50px;
 }
 
@@ -503,9 +504,32 @@ nav .close {
     bottom: -1130px;
     right: 2px;
 }
-
 /* ========== GENERAL INFO END ==========*/
 
+/* ========== FOOTER ==========*/
+.footer {
+    padding: 25px 0;
+    background-color: #210a12;
+    text-align: center;
+}
+.logo-copy-wrap {
+    display: inline-block;
+}
+.logo-copy-wrap small {
+    display: block;
+    fill: #b9cde2;
+}
+.footer ul {
+    padding-top: 20px;
+}
+
+.icon {
+    fill: #b9cde2;
+}
+.footer li a:hover {
+    color: #b9cde2;
+}
+/* ========== FOOTER END ==========*/
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -568,7 +592,6 @@ nav .close {
     font-size: 3.6em;
     position: relative;
     top: 130px;
-}
 }
 /* ========== HERO END ==========*/
 
@@ -638,9 +661,53 @@ nav .close {
     width: 596px;
     bottom: -240px;
     right: -130%;
-    display: inline;
+    display: block;
   }
 /* ========== OUR STORY END ==========*/
+
+/* ========== GENERAL INFO ==========*/
+.circle_2 span:first-child {
+    position: absolute;
+    top: -50px;
+    width: 368px;
+    height: 368px;
+}
+
+.circle_2 span:nth-child(2) {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    display: block;
+}
+
+.circle_2 span:nth-child(3) {
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    left: 900px;
+    top: -60px;
+}
+
+.circle_2 span:nth-child(4) {
+    width: 335px;
+    height: 335px;
+    position: absolute;
+    left: 950px;
+    top: 100px
+}
+
+.circle_2 span:last-child {
+    width: 57px;
+    height: 57px;
+    position: absolute;
+    top: 700px;
+}
+
+.info li {
+    display: inline-block;
+    width: calc(33.333% - 35px);
+}
+/* ========== GENERAL INFO END ==========*/
 }
 
 /* ==========================================================================
