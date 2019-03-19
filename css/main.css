@@ -328,13 +328,18 @@ nav .close {
    /* position: relative;
     top: 245px;*/
 }
-.our_story .container .img {
-    width: 212.5px;
+.our_story .round-image {
+    overflow: hidden;
+    clip-path: circle(41% at 50% 50%);
+    /*width: 212.5px;
     height: 297px;
-   /* position: relative;
+    position: relative;
     left: 1px;
     bottom: 580px;
     clip-path: circle(41% at 50% 50%);*/
+}
+.our_story .img {
+    max-width: 100%;
 }
 .circle {
     position: relative;
