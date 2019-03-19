@@ -107,7 +107,7 @@ body {
     color: #100c0c;
 }
 section {
-    padding: 0 35px 50px;
+    padding: 10px 35px 20px;
     overflow: hidden;
 }
 .container {
@@ -154,7 +154,7 @@ small {
     padding: 15px 0 0;
 }
 p {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 a {
     text-decoration: none;
@@ -246,7 +246,7 @@ nav .close {
 
 /* ========== PRODUCTS ==========*/
 .products .container {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 /* ========== PRODUCTS END ==========*/
 
@@ -256,7 +256,7 @@ nav .close {
     padding-bottom: 0px;
 }
 .ordering .container  {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .ordering-quote {
     font-weight: 600;
@@ -302,15 +302,12 @@ nav .close {
 
 /* ========== OUR STORY ==========*/
 .our_story .container {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 .content {
     padding-right: 0px;
     padding-left: 0px;
 }   
-.content p {
-    font-size: 1.8em;
-}
 .our_story .round-image {
     overflow: hidden;
     clip-path: circle(41% at 50% 50%);
@@ -374,8 +371,7 @@ nav .close {
 /* ========== GALLERY END ==========*/
 /* ========== GENERAL INFO ==========*/
 .general-info .container {
-    position: relative;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 .general-info li p:nth-child(2) {
     font-weight: 700;
@@ -386,7 +382,6 @@ nav .close {
     padding: 20px 0 20px;
 }
 .info li p {
-    font-size: 1.8em;
     margin: 0;
 }
 .circle_2 {
