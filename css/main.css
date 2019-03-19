@@ -228,16 +228,7 @@ nav .close {
     background: url('../img/background.jpg') no-repeat center center;
     background-size: 100% auto;
 }
-.hero .container {
-    height: 606px;
-}
-.quote {
-    /*position: absolute;
-    top: 125px;*/
-}
 .order {
-    /*position: relative;
-    left: 54px;*/
     width: 121px;
     height: 32px;
     font-weight: 700;
@@ -247,10 +238,15 @@ nav .close {
 }
 /* ========== HERO END ==========*/
 
+/* ========== PRODUCTS ==========*/
+.products .container {
+    padding-top: 20px;
+}
+/* ========== PRODUCTS END ==========*/
+
 /* ========== ORDERING PROCESS ==========*/
 .ordering {
     background-color: #f1eaeb;
-    /*position: relative;*/
 }
 .ordering .container  {
     padding-top: 50px;
@@ -266,15 +262,12 @@ nav .close {
     margin-top: 90px;
 }
 #ordering-process div {
-    /*position: relative;*/
     display: inline-block;
     border: 1px solid #46938e;
     max-width: 347px;
     margin: 0 0 60px 0;
 }
 #ordering-process div img:first-of-type { 
-    /*position: absolute;
-    top: -21px;*/
     background-color: #f1eaeb;
     padding-right: 5px;
     padding-left: 5px;
@@ -290,10 +283,6 @@ nav .close {
     padding-bottom: 20px;
 }
 #ordering-process div .number {
-    /*position: absolute;
-    bottom: -11px;
-    top: auto;
-    left: 50%;*/
     margin: 0;
     margin-left: -4px;
     padding-left: 5px;
@@ -312,31 +301,12 @@ nav .close {
     padding-top: 20px;
 }
 .content {
-   /* position: relative;*/
     padding-right: 0px;
     padding-left: 0px;
 }   
-.content h5 {
-    /*position: relative;
-    top: 275px;*/
-}
-.content h6 {
-    /*position: relative;
-    top: 240px;*/
-}
-.our_story .container .content p {
-   /* position: relative;
-    top: 245px;*/
-}
 .our_story .round-image {
     overflow: hidden;
     clip-path: circle(41% at 50% 50%);
-    /*width: 212.5px;
-    height: 297px;
-    position: relative;
-    left: 1px;
-    bottom: 580px;
-    clip-path: circle(41% at 50% 50%);*/
 }
 .our_story .img {
     max-width: 100%;
