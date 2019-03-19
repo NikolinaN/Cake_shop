@@ -116,7 +116,7 @@ section {
     margin: 0 auto;
 }
 h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 700;
     text-transform: uppercase;
     color: #46938e;
@@ -138,14 +138,16 @@ h4 {
 
 }
 h5{
-    font-size: 3em;
+    font-size: 2.2em;
     color: #000000;
+    margin: 0 0 15px;
 }
 h6 {
     font-weight: 400;
     font-style: italic;
-    font-size: 2em;
+    font-size: 1.8em;
     color: #a3a3a3;
+    margin: 5px 0;
 }
 small {
     color: #b9cde2;
@@ -306,6 +308,9 @@ nav .close {
     padding-right: 0px;
     padding-left: 0px;
 }   
+.content p {
+    font-size: 1.8em;
+}
 .our_story .round-image {
     overflow: hidden;
     clip-path: circle(41% at 50% 50%);
@@ -374,7 +379,15 @@ nav .close {
 }
 .general-info li p:nth-child(2) {
     font-weight: 700;
-    font-size: 2.5em;
+    font-size: 2em;
+    padding: 10px 0;
+}
+.info li {
+    padding: 20px 0 20px;
+}
+.info li p {
+    font-size: 1.8em;
+    margin: 0;
 }
 .circle_2 {
     position: relative;
