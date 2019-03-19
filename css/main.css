@@ -151,7 +151,7 @@ h6 {
 }
 small {
     color: #b9cde2;
-    padding: 15px 0 0;
+    padding: 10px 0 0;
 }
 p {
     font-size: 1.8em;
@@ -450,7 +450,10 @@ nav .close {
     display: inline-flex;
 }
 .footer ul li {
-    padding: 10px;
+    padding: 10px;    
+}
+.footer li img {
+    max-width: 30px;
 }
 .footer li a:hover {
     color: #70c0e5;
