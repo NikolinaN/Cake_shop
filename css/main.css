@@ -226,18 +226,18 @@ nav .close {
 /* ========== HERO ==========*/
 .hero {
     background: url('../img/background.jpg') no-repeat center center;
-    background-size: cover;
+    background-size: 100% auto;
 }
 .hero .container {
     height: 606px;
 }
 .quote {
-    position: absolute;
-    top: 125px;
+    /*position: absolute;
+    top: 125px;*/
 }
 .order {
-    position: relative;
-    left: 54px;
+    /*position: relative;
+    left: 54px;*/
     width: 121px;
     height: 32px;
     font-weight: 700;
@@ -250,7 +250,7 @@ nav .close {
 /* ========== ORDERING PROCESS ==========*/
 .ordering {
     background-color: #f1eaeb;
-    position: relative;
+    /*position: relative;*/
 }
 .ordering .container  {
     padding-top: 50px;
@@ -266,15 +266,15 @@ nav .close {
     margin-top: 90px;
 }
 #ordering-process div {
-    position: relative;
+    /*position: relative;*/
     display: inline-block;
     border: 1px solid #46938e;
     max-width: 347px;
     margin: 0 0 60px 0;
 }
 #ordering-process div img:first-of-type { 
-    position: absolute;
-    top: -21px;
+    /*position: absolute;
+    top: -21px;*/
     background-color: #f1eaeb;
     padding-right: 5px;
     padding-left: 5px;
@@ -290,11 +290,11 @@ nav .close {
     padding-bottom: 20px;
 }
 #ordering-process div .number {
-    position: absolute;
+    /*position: absolute;
     bottom: -11px;
     top: auto;
+    left: 50%;*/
     margin: 0;
-    left: 50%;
     margin-left: -4px;
     padding-left: 5px;
     padding-right: 5px;
@@ -312,29 +312,29 @@ nav .close {
     padding-top: 20px;
 }
 .content {
-    position: relative;
+   /* position: relative;*/
     padding-right: 0px;
     padding-left: 0px;
 }   
 .content h5 {
-    position: relative;
-    top: 275px;
+    /*position: relative;
+    top: 275px;*/
 }
 .content h6 {
-    position: relative;
-    top: 240px;
+    /*position: relative;
+    top: 240px;*/
 }
 .our_story .container .content p {
-    position: relative;
-    top: 245px;
+   /* position: relative;
+    top: 245px;*/
 }
 .our_story .container .img {
     width: 212.5px;
     height: 297px;
-    position: relative;
+   /* position: relative;
     left: 1px;
     bottom: 580px;
-    clip-path: circle(41% at 50% 50%);
+    clip-path: circle(41% at 50% 50%);*/
 }
 .circle {
     position: relative;
@@ -377,7 +377,6 @@ nav .close {
 }
 .gallery{
     position: relative;
-    /*padding: 100px 0;*/
     margin: 0 auto;
 }
 .images {
@@ -479,10 +478,10 @@ nav .close {
    Modify as content requires.
    ========================================================================== */
 
-
+/*
 @media only screen and (min-width: 1024px) {
     /*========== HEADER ==========*/
-    header {
+   /* header {
         padding: 25px 0 10px;
     }
 
@@ -523,7 +522,7 @@ nav .close {
 /* ========== HEADER END ==========*/
 
 /* ========== HERO ==========*/
-.order {
+/*.order {
     position: relative;
     top: 180px;
     width: 225px;
@@ -538,13 +537,13 @@ nav .close {
 /* ========== HERO END ==========*/
 
 /* ========== ORDERING PROCESS ==========*/
-.ordering-quote {
+/*.ordering-quote {
     font-size: 3em;
 }
 /* ========== ORDERING PROCESS END ==========*/
 
 /* ========== OUR STORY END ==========*/
-.our_story .container {
+/*.our_story .container {
     height: 720px;
 }
 .content {
@@ -600,7 +599,7 @@ nav .close {
 /* ========== OUR STORY END ==========*/
 
 /* ========== GENERAL INFO ==========*/
-.circle_2 span:first-child {
+/*.circle_2 span:first-child {
     position: absolute;
     top: -50px;
     width: 368px;
@@ -637,7 +636,7 @@ nav .close {
     width: calc(33.333% - 35px);
 }
 /* ========== GENERAL INFO END ==========*/
-}
+/*}*/
 
 /* ==========================================================================
    Helper classes
