@@ -165,13 +165,25 @@ a {
     background: #ffffff;
     padding: 6px 27px;
 }
-
+.order {
+    width: 125px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 1.8em; 
+    color: #ffffff;
+    background-color: #56b5af;
+    margin: 10px;
+}
+.order:hover {
+    background-color: #b9cde2;
+    border: 1px solid #46938e;
+}
 /*=============HEADER=============*/
 header {
     padding: 13px 0 8px;
 }
 nav {
-    display: none;
+    display: none; /*table*/
     position: fixed;
     top: 0;
     left: 0;
@@ -234,13 +246,8 @@ nav .close {
     height: 450px;
     padding: 15px;
 }
-.order {
-    width: 121px;
-    height: 32px;
-    font-weight: 700;
-    font-size: 1.8em; 
-    color: #ffffff;
-    background-color: #56b5af;
+.hero h3 {
+    margin: 30px 0 10px 10px;
 }
 /* ========== HERO END ==========*/
 
@@ -253,46 +260,52 @@ nav .close {
 /* ========== ORDERING PROCESS ==========*/
 .ordering {
     background-color: #f1eaeb;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 }
-.ordering .container  {
-    padding-top: 10px;
+.ordering-process {
+    display: inline-block;
+    margin-top: 30px;
 }
+.ordering-process .ornament { 
+    background-color: #f1eaeb;
+    display: block;
+    text-align: center;
+    margin: -20px auto 0;
+    padding: 0 5px;
+}
+.ordering-process h4 {
+    position: relative;
+    margin: 20px 5px 5px 5px;
+}
+.ordering-process h4 img {
+    display: inline;
+    margin: -10px 12px 0 0;
+}
+/*
+.ordering h4 img {
+    display: block;
+    margin: 5px;
+}*/
 .ordering-quote {
     font-weight: 600;
     font-style: italic;
     color: #1d1d1d;
 }
-#ordering-process {
-    display: inline-block;
-    margin-top: 90px;
-}
-#ordering-process div {
+.ordering-process div {
     display: inline-block;
     border: 1px solid #46938e;
     max-width: 347px;
-    margin: 0 0 60px 0;
+    margin: 0 0 40px 0;
 }
-#ordering-process div img:first-of-type { 
-    background-color: #f1eaeb;
-    padding-right: 5px;
-    padding-left: 5px;
-    margin-left: -80px;
-}
-#ordering-process div h4 {
-    display: inline-block;
-    vertical-align: middle;
-}
-#ordering-process div p {
+.ordering-process div p {
     margin: 0;
     padding-bottom: 20px;
 }
-#ordering-process div .number {
-    margin: 0;
-    padding-left: 5px;
-    padding-right: 5px;
+.ordering-process div .number {
     background-color: #f1eaeb;
-    padding-bottom: 0;
+    display: block;
+    max-width: 20px;
+    margin: 0 auto -31px;
 }
 .description {
     font-size: 1.5em;
@@ -314,6 +327,9 @@ nav .close {
 }
 .our_story .img {
     max-width: 100%;
+}
+.our_story p {
+    text-align: justify;
 }
 .circle {
     position: relative;
@@ -370,19 +386,27 @@ nav .close {
 }
 /* ========== GALLERY END ==========*/
 /* ========== GENERAL INFO ==========*/
+.general-info {
+    overflow: visible;
+}
 .general-info .container {
     padding-top: 10px;
-}
-.general-info li p:nth-child(2) {
-    font-weight: 700;
-    font-size: 2em;
-    padding: 10px 0;
 }
 .info li {
     padding: 20px 0 20px;
 }
 .info li p {
     margin: 0;
+}
+.info .map {
+    font-size: 1.75em;
+    font-weight: 700;
+    color: #000;
+    /*background-color: #b9cde2;
+    padding: 5px 20px; /* hover */
+}
+.info .txt {
+    margin: 0 0 20px 0;
 }
 .circle_2 {
     position: relative;
@@ -399,8 +423,8 @@ nav .close {
     width: 184px;
     height: 184px;
     opacity: .1;
-    top: 665px;
-    left: -70px;
+    top: 480px;
+    left: -45px;
 }
 .circle_2 span:nth-child(2) {
     width: 64px;
@@ -413,23 +437,21 @@ nav .close {
 .circle_2 span:nth-child(3) {
     width: 64px;
     height: 64px;
-    opacity: .25;
-    top: 130px;
+    opacity: .4;
+    top: 115px;
     left: 200px
 }
 .circle_2 span:nth-child(4) {
     width: 167.5px;
     height: 167.5px;
     opacity: .2;
-    top: -50px;
-    left: -40px;
+    top: -35px;
+    left: -100px;
 }
-.circle_2 span:last-child {
-    width: 28.5px;
-    height: 28.5px;
-    opacity: .3;
-    bottom: -1130px;
-    right: 2px;
+.arrow {
+    display: block;
+    margin: 0 -21px 0 auto;
+    opacity: .5;
 }
 /* ========== GENERAL INFO END ==========*/
 
@@ -439,8 +461,12 @@ nav .close {
     background-color: #210a12;
     text-align: center;
 }
+.footer p{
+    color: #b9cde2; 
+    font-size: 12px;
+}
 .logo-wrap {
-    display: grid; /*ne radi inline-block ali grid radi, zasto?*/
+    display: inline-block;
 }
 .logo-copy-wrap small {
     display: block;
@@ -465,14 +491,70 @@ nav .close {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media only screen and (min-width: 768px) {
+    /*========= Hero =========*/
+    /*========= Hero End =========*/
 
-/*
+    /*========= Products =========*/
+    /*========= Products end =========*/
+
+    /*========= Ordering process =========*/
+    /*========= Ordering process end =========*/
+
+    /*========= Our story =========*/
+    .our_story .round-image {
+        clip-path: circle(33% at 50% 50%);
+    }
+    .circle span:first-child {
+        height: 226px;
+        width: 226px;
+        top: 100px;
+        left: 413px;
+    }
+    .circle span:nth-child(2) {
+        height: 522px;
+        width: 552px;
+        bottom: -800px;
+        left: -220px;
+    }
+   /*========== Our story end =========*/ 
+
+   /*========= Gallery =========*/
+    /*========= Gallery end =========*/
+
+    /*========= General Info =========*/
+    .circle_2 span:first-child {
+        width: 276px;
+        height: 276px;
+        top: 435px;
+        left: 60px;
+    }
+    .circle_2 span:nth-child(3) {
+        width: 96px;
+        height: 96px;
+        top: 100px;
+        left: 500px;
+    }
+    .circle_2 span:nth-child(4) {
+        width: 251.25px;
+        height: 251.25px;
+        top: -50px;
+        left: -90px;
+    }
+    /*========= general Info end =========*/
+
+    /*========= Footer =========*/
+    .logo-wrap {
+        display: block;
+    }
+    /*========= Footer =========*/
+}
+
 @media only screen and (min-width: 1024px) {
     /*========== HEADER ==========*/
-   /* header {
+    header {
         padding: 25px 0 10px;
     }
-
     nav {
         display: block;
         position: initial;
@@ -481,28 +563,22 @@ nav .close {
         background: inherit;
         float: right;
     }
-
     nav li {
         float: left;
     }
-
     nav a {
         color: #000;
         margin-left: 20px;
     }
-
     nav a:active,
     nav a:hover {
         color: #46938e;
         border-top: 1px solid #46938e;
         border-bottom: 1px solid #46938e;
     }
-
     nav a {
         font-size: 1.8em;
     }
-
-
     .burger,
     nav .close {
         display: none;
@@ -510,84 +586,34 @@ nav .close {
 /* ========== HEADER END ==========*/
 
 /* ========== HERO ==========*/
-/*.order {
-    position: relative;
-    top: 180px;
+.hero {
+    background: url(../img/background.jpg) no-repeat center center;
+    background-size: 100% auto;
+}
+.order {
     width: 225px;
     height: 60px;
     font-size: 3em;
 }
 .quote h3 {
     font-size: 3.6em;
-    position: relative;
-    top: 130px;
 }
 /* ========== HERO END ==========*/
 
 /* ========== ORDERING PROCESS ==========*/
-/*.ordering-quote {
+.ordering-quote {
     font-size: 3em;
 }
 /* ========== ORDERING PROCESS END ==========*/
 
 /* ========== OUR STORY END ==========*/
-/*.our_story .container {
-    height: 720px;
+.our_story .round-image {
+    clip-path: circle(27% at 50% 50%);
 }
-.content {
-    padding-left: 636px;
-    padding-right: 50px;
-}   
-.our_story .container .content img {
-    position: relative;
-    left: -200px;
-}
-.our_story .container .img {
-    width: 425px;
-    height: 594px;
-    left: -290px;
-    bottom: 516px;
-}
-.our_story .container .content p {
-    font-size: 2.4em;
-    max-width: 660px;
-    text-align: left;
-    top: 0;
-}
-.content h6 {
-    text-align: left;
-    top: 0;
- }
-.content h5 {
-    text-align: left;
-    top: 0;
- }
-.content h2 {
-     text-align: left;
- }
-.circle span:first-child {
-    height: 226px;
-    width: 226px;
-    top: 40px;
-    left: -225px;
-}
-.circle span:nth-child(2) {
-    height: 596px;
-    width: 596px;
-    top: 205px;
-    left: -925px;
-  }
-  .circle span:last-child {
-    height: 596px;
-    width: 596px;
-    bottom: -240px;
-    right: -130%;
-    display: block;
-  }
 /* ========== OUR STORY END ==========*/
 
 /* ========== GENERAL INFO ==========*/
-/*.circle_2 span:first-child {
+.circle_2 span:first-child {
     position: absolute;
     top: -50px;
     width: 368px;
@@ -624,7 +650,7 @@ nav .close {
     width: calc(33.333% - 35px);
 }
 /* ========== GENERAL INFO END ==========*/
-/*}*/
+}
 
 /* ==========================================================================
    Helper classes
@@ -650,7 +676,7 @@ nav .close {
 button {
     background: transparent;
     border: none;
-    border-radius: 3px;
+    border-radius: 2px;
 }
 
 /*
