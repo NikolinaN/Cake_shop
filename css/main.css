@@ -398,6 +398,9 @@ nav .close {
 .info li p {
     margin: 0;
 }
+.info li p:nth-child(2) {
+    font-weight: 700;
+}
 .info .map {
     font-size: 1.75em;
     font-weight: 700;
@@ -551,6 +554,9 @@ nav .close {
 }
 
 @media only screen and (min-width: 1024px) {
+    h2 { 
+    font-size: 3.6em;
+    }
     /*========== HEADER ==========*/
     header {
         padding: 25px 0 10px;
@@ -607,15 +613,70 @@ nav .close {
 /* ========== ORDERING PROCESS END ==========*/
 
 /* ========== OUR STORY END ==========*/
+.our_story {
+    padding-bottom: 100px;
+}
+.our_story .content {
+    position: relative;
+}
 .our_story .round-image {
     clip-path: circle(27% at 50% 50%);
+}
+.circle span:first-child {
+    height: 226px;
+    width: 226px;
+    top: 15px;
+    left: 370px;
+}
+.circle span:nth-child(2) {
+    height: 522px;
+    width: 552px;
+    bottom: -695px;
+    left: -220px;
+}
+.our_story .round-image {
+    clip-path: circle(36% at 50% 50%);
+    display: block;
+    margin: 0 338px 0 0;
+}
+.our_story .ornament-large {
+    position: absolute;
+    top: 60px;
+    left: 630px;
+}
+.our_story h2 {
+    position: absolute;
+    left: 580px;
+    top: 110px;
+}
+.our_story h5 {
+    position: absolute;
+    top: 200px;
+    left: 580px;
+    font-size: 3em;
+}
+.our_story h6 {
+    position: absolute;
+    top: 240px;
+    left: 580px;
+    font-size: 2em;
+}
+.our_story p {
+    position: absolute;
+    top: 290px;
+    left: 580px;
+    font-size: 2em;
 }
 /* ========== OUR STORY END ==========*/
 
 /* ========== GENERAL INFO ==========*/
+.general-info {
+    padding-bottom: 40px;
+}
 .circle_2 span:first-child {
     position: absolute;
-    top: -50px;
+    top: -165px;
+    left: -40px;
     width: 368px;
     height: 368px;
 }
@@ -624,12 +685,14 @@ nav .close {
     height: 128px;
     position: absolute;
     display: block;
+    left: 260px;
+    top: 320px;
 }
 .circle_2 span:nth-child(3) {
     width: 128px;
     height: 128px;
     position: absolute;
-    left: 900px;
+    left: 751px;
     top: -60px;
 }
 .circle_2 span:nth-child(4) {
@@ -643,7 +706,8 @@ nav .close {
     width: 57px;
     height: 57px;
     position: absolute;
-    top: 700px;
+    top: 2px;
+    left: 500px;
 }
 .info li {
     display: inline-block;
