@@ -281,11 +281,6 @@ nav .close {
     display: inline;
     margin: -10px 12px 0 0;
 }
-/*
-.ordering h4 img {
-    display: block;
-    margin: 5px;
-}*/
 .ordering-quote {
     font-weight: 600;
     font-style: italic;
@@ -395,11 +390,15 @@ nav .close {
 .info li {
     padding: 20px 0 20px;
 }
+.info li img {
+    padding-bottom: 10px;
+}
 .info li p {
     margin: 0;
 }
 .info li p:nth-child(2) {
     font-weight: 700;
+    padding-bottom: 15px;
 }
 .info .map {
     font-size: 1.75em;
@@ -466,13 +465,10 @@ nav .close {
 }
 .footer p{
     color: #b9cde2; 
-    font-size: 12px;
+    font-size: 1.2em;
 }
 .logo-wrap {
     display: inline-block;
-}
-.logo-copy-wrap small {
-    display: block;
 }
 .footer ul {
     padding-top: 20px;
@@ -550,6 +546,9 @@ nav .close {
     .logo-wrap {
         display: block;
     }
+    .footer p{
+        font-size: 1.4em;
+    }
     /*========= Footer =========*/
 }
 
@@ -557,6 +556,11 @@ nav .close {
     h2 { 
     font-size: 3.6em;
     }
+    /*========== Hero ==========*/
+    .hero h3 {
+        margin: 60px 0 35px 20px;
+    }
+    /*========== Hero end ==========*/
     /*========== HEADER ==========*/
     header {
         padding: 25px 0 10px;
@@ -675,45 +679,45 @@ nav .close {
 }
 .circle_2 span:first-child {
     position: absolute;
-    top: -165px;
+    top: -70px;
     left: -40px;
-    width: 368px;
-    height: 368px;
 }
 .circle_2 span:nth-child(2) {
-    width: 128px;
-    height: 128px;
     position: absolute;
     display: block;
-    left: 260px;
-    top: 320px;
+    left: 250px;
+    top: 310px;
+    width: 92px;
+    height: 92px;
 }
 .circle_2 span:nth-child(3) {
-    width: 128px;
-    height: 128px;
     position: absolute;
-    left: 751px;
+    left: 675px;
     top: -60px;
 }
 .circle_2 span:nth-child(4) {
-    width: 335px;
-    height: 335px;
     position: absolute;
-    left: 950px;
-    top: 100px
-}
-.circle_2 span:last-child {
-    width: 57px;
-    height: 57px;
-    position: absolute;
-    top: 2px;
-    left: 500px;
+    left: 760px;
+    top: 40px;
 }
 .info li {
-    display: inline-block;
+    display: inline-table;
     width: calc(33.333% - 35px);
 }
+.arrow{
+    width: 57px;
+}
 /* ========== GENERAL INFO END ==========*/
+
+/* ========== FOOTER ==========*/
+.logo-wrap {
+    display: inline-block;
+    margin: 0 500px 0 0;
+}
+.footer p{
+    font-size: 1.6em;
+}
+/* ========== FOOTER END ==========*/
 }
 
 /* ==========================================================================
