@@ -540,6 +540,9 @@ nav .close {
         top: -50px;
         left: -90px;
     }
+    .arrow {
+        margin: 0 0 0 auto;
+    }
     /*========= general Info end =========*/
 
     /*========= Footer =========*/
@@ -719,7 +722,70 @@ nav .close {
 }
 /* ========== FOOTER END ==========*/
 }
+@media only screen and (min-width: 1200px) {
+    /*========= Hero =========*/
+    /*========= Hero End =========*/
 
+    /*========= Products =========*/
+    /*========= Products end =========*/
+
+    /*========= Ordering process =========*/
+    /*========= Ordering process end =========*/
+
+    /*========= Our story =========*/
+    .our_story .round-image {
+        clip-path: circle(36% at 50% 50%);
+        margin: 5px 500px 0 0;
+    }
+    .our_story p {
+        font-size: 2.4em;
+    }
+    /*========= Our story end =========*/
+
+    /*========= Gallery =========*/
+    .gallery .container {
+        padding-bottom: 50px;
+    }
+    /*========= Gallery end =========*/
+
+    /*========= General info =========*/
+    .general-info h2 {
+        margin-bottom: 60px;
+    }
+    .circle_2 span:first-child {
+        top: -80px;
+        left: -150px;
+        width: 368px;
+        height: 368px;
+    }
+    .circle_2 span:nth-child(2) {
+        left: 280px;
+        top: 355px;
+        width: 128px;
+        height: 128px;
+    }
+    .circle_2 span:nth-child(3) {
+        left: 765px;
+        top: -70px;
+        opacity: .25;
+        width: 128px;
+        height: 128px;
+    }
+    .circle_2 span:nth-child(4) {
+        left: 880px;
+        top: -15px;
+        width: 335px;
+        height: 335px;
+    }
+    .info .map:hover {
+        background-color: #b9cde2;
+        padding: 5px 20px;
+    }
+    /*========= General info end =========*/
+
+    /*========= Footer =========*/
+    /*========= Footer end =========*/
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
