@@ -54,6 +54,20 @@
   width: 100%;
   display: block;
 }
+.flexslider .slides li p {
+  font-size: 1.6em;
+  text-align: justify;
+  max-width: 230px;
+}
+.flexslider .slides li p:first-child {
+  font-size: 2.2em;
+  font-weight: 700;
+}
+.flexslider .slides li p:last-child {
+  font-size: 2em;
+  color: #46938e;
+  font-weight: 700;
+}
 .flexslider .slides:after {
   content: "\0020";
   display: block;
