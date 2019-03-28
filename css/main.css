@@ -192,7 +192,7 @@ nav {
     background: #46938e;
     text-align: center;
     color: #000000;
-    z-index: 2;
+    z-index: 99;
 }
 nav ul {
     /*display: table-cell;*/
@@ -500,7 +500,7 @@ nav .close {
         top: 97px;
     }
     /*=============Header end=============*/
-    
+
     /*========= Hero =========*/
     /*========= Hero End =========*/
 
