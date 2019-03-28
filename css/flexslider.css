@@ -163,9 +163,11 @@ html[xmlns] .flexslider .slides {
   content: '\f002';
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  top: 70px;
+  left: -20px;
 }
 .flex-direction-nav .flex-next {
+  top: 70px;
   right: -50px;
   text-align: right;
 }

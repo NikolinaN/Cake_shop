@@ -1,3 +1,4 @@
+/*********** Products slider ***********/
 (function() {
  
     // store the slider in a local variable
@@ -33,3 +34,10 @@
       flexslider.vars.maxItems = gridSize;
     });
   }());
+  /*********** Products slider ***********/
+
+ /*********** Navigation ***********/
+	$('.burger').on('click', function(){
+    $('.nav').slideToggle(500);
+   });
+/*********** Navigation ***********/
