@@ -287,10 +287,23 @@ html[xmlns] .flexslider .slides {
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev {
     opacity: 1;
-    left: 10px;
+    left: -40px;
   }
   .flex-direction-nav .flex-next {
     opacity: 1;
-    right: 10px;
+    right: -20px;
+  }
+  .flex-control-paging li a {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-direction-nav .flex-prev {
+    left: -35px;
+  }
+  .flex-direction-nav .flex-next {
+    right: -27px;
   }
 }
