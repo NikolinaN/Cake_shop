@@ -44,9 +44,9 @@
   
   <main>
   <!--Hero-->
-    <section class="hero container" >
+    <section class="hero container" id="hero">
         <div class="quote">
-          <h3>Unusual. Sweet. Baked with love.</h3>
+          <p>Unusual. Sweet. Baked with love.</p>
           <button class="order">Order now</button>
       </div>
     </section>
@@ -64,7 +64,7 @@
             <img src="img/products-1.jpg" alt="">
           </div>
           <div>
-            <p>Chokolate fantasy cake</p>
+            <h3>Chokolate fantasy</h3>
             <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
             <p>$42 per kg</p>
           </div>
@@ -74,7 +74,7 @@
                 <img src="img/products-2.jpg" alt="">
               </div>
               <div>
-                <p>Vini cake</p>
+                <h3>Vini cake</h3>
                 <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
                 <p>$35 per kg</p>
               </div>
@@ -84,7 +84,7 @@
                 <img src="img/products-3.jpg" alt="">
               </div>
               <div>
-                <p>Grammy cake</p>
+                <h3>Grammy cake</h3>
                 <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
                 <p>$37 per kg</p>
               </div>
@@ -94,7 +94,7 @@
                 <img src="img/products-4.jpg" alt="">
               </div>
               <div>
-                <p>Rainbow cake</p>
+                <h3>Rainbow cake</h3>
                 <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
                 <p>$35 per kg</p>
               </div>
@@ -104,7 +104,7 @@
               <img src="img/products-5.jpg" alt="">
             </div>
             <div>
-              <p>Wedding cake</p>
+              <h3>Wedding cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$37 per kg</p>
             </div>
@@ -114,7 +114,7 @@
               <img src="img/products-6.jpg" alt="">
             </div>
             <div>
-              <p>Wedding cake</p>
+              <h3>Wedding cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$45 per kg</p>
             </div>
@@ -124,7 +124,7 @@
               <img src="img/products-7.jpg" alt="">
             </div>
             <div>
-              <p>Rose cake</p>
+              <h3>Rose cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$30 per kg</p>
             </div>
@@ -134,7 +134,7 @@
               <img src="img/products-8.jpg" alt="">
             </div>
             <div>
-              <p>Wedding cake</p>
+              <h3>Wedding cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$40 per kg</p>
             </div>
@@ -144,7 +144,7 @@
               <img src="img/products-9.jpg" alt="">
             </div>
             <div>
-              <p>Black forest cake</p>
+              <h3>Black forest cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$40 per kg</p>
             </div>
@@ -154,7 +154,7 @@
               <img src="img/products-10.jpg" alt="">
             </div>
             <div>
-              <p>Red velvet cheesecake</p>
+              <h3>Red velvet cheesecake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$38 per kg</p>
             </div>
@@ -164,7 +164,7 @@
               <img src="img/products-11.jpg" alt="">
             </div>
             <div>
-              <p>Egyptian cake</p>
+              <h3>Egyptian cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$45 per kg</p>
             </div>
@@ -174,7 +174,7 @@
               <img src="img/products-12.jpg" alt="">
             </div>
             <div>
-              <p>Egyptian cake</p>
+              <h3>Egyptian cake</h3>
               <p>Lorem ipsum dolor amet, conse adipiscing elit manga.</p>
               <p>$49 per kg</p>
             </div>
@@ -219,20 +219,22 @@
   <!--Our story-->
   <section class="our_story text-center" id="our_story">
     <div class="container">
-      <div class="content">
           <div class="circle">
               <span></span>
               <span></span>
               <span></span>
           </div>
-        <img src="img/ornament1.png" class="ornament-large" alt="Ornament">
-        <h2>Our story</h2>
+        <div class="heading-wrap">
+          <img src="img/ornament1.png" class="ornament-large" alt="Ornament">
+          <h2>Our story</h2>
+        </div>
         <div class="round-image">
           <img class="img" src="img/chef.jpg" alt="Founder and head chef">
         </div>
-        <h5>Anastasia Lloyd</h5>
-        <h6>Founder &#38; head chef</h6>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        <div class="content">
+          <h5>Anastasia Lloyd</h5>
+          <h6>Founder &#38; head chef</h6>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
            Fusce scelerisque tellus vitae egestas dapibus. 
            Pellentesque sagittis, lectus eget suscipit egestas, leo tellus eleifend felis, eu blandit enim quam quis lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
       </div>
@@ -245,7 +247,7 @@
       <div class="container">
           <img src="img/ornament1.png" class="ornament-large" alt="Ornament">
           <h2>Gallery</h2>
-          <ul class="images unstyle-list">
+          <ul class="images unstyle-list clearfix">
             <li><a href="img/gallery-1.jpg"><img src="img/gallery-1.jpg"></a></li>
             <li><a href="img/gallery-2.jpg"><img src="img/gallery-2.jpg"></a></li>
             <li><a href="img/gallery-3.jpg"><img src="img/gallery-3.jpg"></a></li>
@@ -295,7 +297,7 @@
               <button class="order">ORDER</button>
             </li>
           </ul>
-          <img src="img/arrow.png" class="arrow">
+          <a href="#hero"><img src="img/arrow.png" class="arrow"></a>
       </div>
     </section>
   <!--General Info end-->

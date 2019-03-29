@@ -107,7 +107,7 @@ body {
     color: #100c0c;
 }
 section {
-    padding: 10px 35px 20px;
+    padding: 20px 35px 20px;
     overflow: hidden;
 }
 .container {
@@ -123,11 +123,9 @@ h2 {
     margin-top: 10px;
 }
 h3 {
-    font-family: 'Overlock', cursive;
-    font-size: 2em;
+    font-size: 2.2em;
     font-weight: 700;
-    font-style: italic;
-    color: #ffffff;
+    text-align: left;
 }
 h4 {
     font-size: 1.8em;
@@ -222,11 +220,12 @@ nav .close {
     display: inline-block;
 }
 .burger {
-    width: 44px;
+    width: 35px;
     height: 25px;
     padding: 5px 0;
     float: right;
-    margin-top: 12px;
+    margin: 21px;
+    outline: none;
 }
 .burger span {
     width: 100%;
@@ -247,7 +246,12 @@ nav .close {
     height: 450px;
     padding: 15px;
 }
-.hero h3 {
+.hero p {
+    font-family: 'Overlock', cursive;
+    font-size: 2em;
+    font-weight: 700;
+    font-style: italic;
+    color: #ffffff;
     margin: 30px 0 10px 10px;
 }
 /* ========== HERO END ==========*/
@@ -265,7 +269,7 @@ nav .close {
 }
 .ordering-process {
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .ordering-process .ornament { 
     background-color: #f1eaeb;
@@ -276,7 +280,7 @@ nav .close {
 }
 .ordering-process h4 {
     position: relative;
-    margin: 20px 5px 5px 5px;
+    margin: 20px 5px 15px 5px;
 }
 .ordering-process h4 img {
     display: inline;
@@ -290,12 +294,12 @@ nav .close {
 .ordering-process div {
     display: inline-block;
     border: 1px solid #46938e;
-    max-width: 347px;
-    margin: 0 0 40px 0;
+    max-width: 300px;
+    margin: 0 15px 40px 0;
 }
 .ordering-process div p {
     margin: 0;
-    padding-bottom: 20px;
+    padding: 0 20px 20px;
 }
 .ordering-process div .number {
     background-color: #f1eaeb;
@@ -310,6 +314,9 @@ nav .close {
 /* ========== ORDERING PROCESS END ==========*/
 
 /* ========== OUR STORY ==========*/
+.our_story {
+    position: relative;
+}
 .our_story .container {
     padding-top: 10px;
 }
@@ -318,13 +325,17 @@ nav .close {
     padding-left: 0px;
 }   
 .our_story .round-image {
+    display: block;
     overflow: hidden;
-    clip-path: circle(41% at 50% 50%);
+    border-radius: 50%;
+    max-width: 100%;
+    margin: 50px 20px 20px;
 }
 .our_story .img {
     max-width: 100%;
 }
 .our_story p {
+    margin-top: 20px;
     text-align: justify;
 }
 .circle {
@@ -342,19 +353,21 @@ nav .close {
     height: 113px;
     width: 113px;
     opacity: .2;
-    top: 140px;
-    left: 150px;
+    top: 95px;
+    left: 145px;
+    z-index: -1;
 }
 .circle span:nth-child(2) {
     height: 298px;
     width: 298px;
     opacity: .27;
-    bottom: -490px;
-    left: -145px;
+    bottom: -485px;
+    left: -170px;
+    z-index: -1;
   }
   .circle span:last-child {
-    height: 298px;
-    width: 298px;
+    height: 596px;
+    width: 596px;
     opacity: .7;
     bottom: 2135px;
     right: -50%;
@@ -495,40 +508,66 @@ nav .close {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 768px) {
-    /*=============Header=============*/
+    /*============= Header =============*/
     nav {
         top: 97px;
     }
-    /*=============Header end=============*/
+    /*============= Header end =============*/
 
-    /*========= Hero =========*/
-    /*========= Hero End =========*/
+    /*========== Hero ==========*/
+    .hero p {
+        font-size: 3em;
+    }
+    .order {
+        width: 160px;
+        height: 50px;
+        font-size: 2.5em;
+        margin-top: 25px;
 
-    /*========= Products =========*/
-    /*========= Products end =========*/
+    }
+    /*========== Hero end ==========*/
 
-    /*========= Ordering process =========*/
-    /*========= Ordering process end =========*/
-
-    /*========= Our story =========*/
+    /*============= Our story =============*/
+    .our_story {
+        overflow: visible;
+        padding-bottom: 100px;
+    }
+    .our_story .heading-wrap {
+        position: absolute;
+        left: 400px;
+        padding-top: 30px;
+    }
+    .our_story .container .content {
+        position: absolute;
+        top: 130px;
+        left: 400px;
+        text-align: left;
+        padding-top: 50px;
+        max-width: 330px;
+    }
     .our_story .round-image {
-        clip-path: circle(33% at 50% 50%);
+        max-width: 45%;
+        margin: 100px 0 0 20px;
     }
     .circle span:first-child {
         height: 226px;
         width: 226px;
-        top: 100px;
-        left: 413px;
+        top: -15px;
+        left: 219px;
     }
     .circle span:nth-child(2) {
         height: 522px;
         width: 552px;
-        bottom: -800px;
-        left: -220px;
+        bottom: -650px;
+        left: -370px;
     }
    /*========== Our story end =========*/ 
 
    /*========= Gallery =========*/
+   .gallery .images li {
+    float: right;
+    width: 50%;
+   }
     /*========= Gallery end =========*/
 
     /*========= General Info =========*/
@@ -569,11 +608,6 @@ nav .close {
     h2 { 
     font-size: 3.6em;
     }
-    /*========== Hero ==========*/
-    .hero h3 {
-        margin: 60px 0 35px 20px;
-    }
-    /*========== Hero end ==========*/
     /*========== HEADER ==========*/
     header {
         padding: 25px 0 10px;
@@ -613,79 +647,80 @@ nav .close {
     background: url(../img/background.jpg) no-repeat center center;
     background-size: 100% auto;
 }
+.hero p {
+    margin: 60px 0 35px 20px;
+    font-size: 3.6em;
+}
 .order {
     width: 225px;
     height: 60px;
     font-size: 3em;
 }
-.quote h3 {
-    font-size: 3.6em;
-}
 /* ========== HERO END ==========*/
 
 /* ========== ORDERING PROCESS ==========*/
+.ordering-process div {
+    margin: 0 9px 100px 0;
+}
 .ordering-quote {
     font-size: 3em;
 }
 /* ========== ORDERING PROCESS END ==========*/
 
-/* ========== OUR STORY END ==========*/
+/* ========== OUR STORY ==========*/
 .our_story {
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 .our_story .content {
     position: relative;
 }
-.our_story .round-image {
-    clip-path: circle(27% at 50% 50%);
+.our_story .heading-wrap {
+    left: 560px;
+    padding-top: 0;
+}
+.our_story .container .content {
+    top: 200px;
+    left: 560px;
+    padding-top: 50px;
+    max-width: 400px;
 }
 .circle span:first-child {
     height: 226px;
     width: 226px;
-    top: 15px;
-    left: 370px;
+    top: -30px;
+    left: 330px;
 }
 .circle span:nth-child(2) {
-    height: 522px;
-    width: 552px;
-    bottom: -695px;
-    left: -220px;
+    height: 596px;
+    width: 596px;
+    bottom: -770px;
+    left: -315px;
+}
+.circle span:last-child {
+    bottom: -80px;
+    right: -840px;
+    display: block;
+    z-index: -1;
 }
 .our_story .round-image {
-    clip-path: circle(36% at 50% 50%);
-    display: block;
-    margin: 0 338px 0 0;
-}
-.our_story .ornament-large {
-    position: absolute;
-    top: 60px;
-    left: 630px;
-}
-.our_story h2 {
-    position: absolute;
-    left: 580px;
-    top: 110px;
+    margin: 65px 0 0 60px;
 }
 .our_story h5 {
-    position: absolute;
-    top: 200px;
-    left: 580px;
     font-size: 3em;
 }
 .our_story h6 {
-    position: absolute;
-    top: 240px;
-    left: 580px;
     font-size: 2em;
 }
 .our_story p {
-    position: absolute;
-    top: 290px;
-    left: 580px;
-    font-size: 2em;
+    font-size: 2.4em;
+    margin-top: 30px;
 }
 /* ========== OUR STORY END ==========*/
-
+/* ========== GALLERY ==========*/
+.gallery .images li {
+    width: 33.3%;
+}
+/* ========== GALLERY END ==========*/
 /* ========== GENERAL INFO ==========*/
 .general-info {
     padding-bottom: 40px;
@@ -743,9 +778,22 @@ nav .close {
     /*========= Ordering process end =========*/
 
     /*========= Our story =========*/
+    .our_story .heading-wrap {
+        left: 690px;
+    }
     .our_story .round-image {
-        clip-path: circle(36% at 50% 50%);
-        margin: 5px 500px 0 0;
+        max-width: 35%;
+    }
+    .circle span:first-child {
+        left: 385px;
+    }
+    .circle span:last-child {
+        right: -1100px;
+        bottom: -120px;
+    }
+    .our_story .container .content {
+        left: 690px;
+        max-width: 583px;
     }
     .our_story p {
         font-size: 2.4em;
@@ -755,6 +803,13 @@ nav .close {
     /*========= Gallery =========*/
     .gallery .container {
         padding-bottom: 50px;
+    }
+    .gallery .images li {
+        width: 33.3%;
+    }
+    .images img {
+        max-width: none;
+        max-height: none;
     }
     /*========= Gallery end =========*/
 
@@ -775,14 +830,14 @@ nav .close {
         height: 128px;
     }
     .circle_2 span:nth-child(3) {
-        left: 765px;
+        left: 810px;
         top: -70px;
         opacity: .25;
         width: 128px;
         height: 128px;
     }
     .circle_2 span:nth-child(4) {
-        left: 880px;
+        left: 1010px;
         top: -15px;
         width: 335px;
         height: 335px;
