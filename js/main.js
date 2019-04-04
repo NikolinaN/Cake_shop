@@ -13,16 +13,16 @@
 
     }
    
-    $(function() {
-      SyntaxHighlighter.all();
-    });
+    // $(function() {
+    //   SyntaxHighlighter.all();
+    // });
    
     $window.on("load", function() {
-      $('.flexslider').flexslider({
+      $('.products .flexslider').flexslider({
         animation: "slide",
         animationLoop: false,
-        itemWidth: 210,
-        itemMargin: 10,
+        itemWidth: 230,
+        itemMargin: 30,
         minItems: getGridSize(), // use function to pull in initial value
         maxItems: getGridSize() // use function to pull in initial value
       });
@@ -38,6 +38,31 @@
   }());
   /*********** Products slider ***********/
 
+  $(window).on('resize',function() {
+    var width = $( window ).width();
+    console.log(width);
+    if(width < 768) {
+      $('.gallery .container > div').addClass('flexslider');
+      $('.gallery .flexslider').flexslider({
+        animation: "slide"
+      });
+  }else if(width >= 768){
+    $('.gallery .container > div').removeClass('flexslider');
+  }
+  });
+
+  $(window).on('load',function() {
+    var width = $( window ).width();
+    console.log(width);
+    if(width < 768) {
+      $('.gallery .container > div').addClass('flexslider');
+      $('.gallery .flexslider').flexslider({
+        animation: "slide"
+      });
+  }else if(width >= 768){
+    $('.gallery .container > div').removeClass('flexslider');
+  }
+  });
  /*********** Navigation ***********/
 	$('.burger').on('click', function(){
     $('.nav').slideToggle(500);
@@ -82,3 +107,4 @@ $('a[href*="#"]')
     }
   });
 /*********** Scroll ***********/
+
