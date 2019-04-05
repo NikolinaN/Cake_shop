@@ -108,3 +108,15 @@ $('a[href*="#"]')
   });
 /*********** Scroll ***********/
 
+/*********** Modal ***********/
+$('.order').on('click', function(event) {
+	event.preventDefault();
+	/* Act on the event */
+	$('.modal').addClass('open');
+});
+$('.modal .close').on('click', function(event) {
+	event.preventDefault();
+	/* Act on the event */
+	$('.modal').removeClass('open');
+});
+/*********** Modal ***********/

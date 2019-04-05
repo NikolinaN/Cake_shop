@@ -107,7 +107,6 @@ body {
     color: #100c0c;
 }
 section {
-    /*padding: 20px 35px 20px;*/
     overflow: hidden;
 }
 .container {
@@ -183,8 +182,32 @@ header {
 header .container {
     margin: -20px 0;
 }
+.close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+ .close span {
+    width: 45px;
+    height: 4px;
+    background: white;
+    display: block;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+.close span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -4px;
+    border-radius: 2px;
+}
 nav {
-    display: table; /*table*/
+    display: table; 
     position: fixed;
     top: 105px;
     left: 0;
@@ -197,7 +220,6 @@ nav {
     display: none;
 }
 nav ul {
-    /*display: table-cell;*/
     vertical-align: middle;
 }
 nav a {
@@ -261,7 +283,6 @@ nav .close {
 /* ========== HERO END ==========*/
 
 /* ========== PRODUCTS ==========*/
-
 /************Flexslider*********/
 .flexslider .slides div {
     margin: 0 auto;
@@ -269,12 +290,14 @@ nav .close {
 }
 .flex-direction-nav .flex-next {
     right: -15px;
+    z-index: -1;
 }
 .flexslider:hover .flex-direction-nav .flex-next {
     right: 43px;
   }
 .flex-direction-nav .flex-prev {
     left: -21px;
+    z-index: -1;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
     left: 35px;
@@ -282,7 +305,7 @@ nav .close {
 .flex-control-nav li {
     margin: 0 3px;
 }
-
+/************Flexslider*********/
 /* ========== PRODUCTS END ==========*/
 
 /* ========== ORDERING PROCESS ==========*/
@@ -434,8 +457,10 @@ nav .close {
     font-size: 1.75em;
     font-weight: 700;
     color: #000;
-    /*background-color: #b9cde2;
-    padding: 5px 20px; /* hover */
+}
+.info .map:hover {
+    background-color: #b9cde2;
+    padding: 5px 20px;
 }
 .info .txt {
     margin: 0 0 20px 0;
@@ -551,12 +576,16 @@ nav .close {
     width: 100%
 }
 .modal-inner {
-    max-width: 520px;
+    font-weight: 700;
+    max-width: 640px;
     margin: 0 auto;
+}
+.modal-inner img {
+    width: 50%;
 }
 legend {
     color: #210a12;
-    font-size: 30px;
+    font-size: 20px;/*30*/
     padding-bottom: 30px;
 }
 input {
@@ -743,6 +772,26 @@ input[type="date"]:before {
         padding-top: 10px;
     }
     /*========= Footer =========*/
+    /*========= Modal =========*/
+    legend {
+        color: #210a12;
+        font-size: 30px;
+    }
+    .modal-wrap {
+        padding: 35px 20px;
+    }
+    input {
+        margin-right: 10px;
+        margin-left: 10px;
+        width: calc(50% - 22px);
+    }
+    input.width__2 {
+        width: calc(100% - 22px);
+    }
+    .modal-inner img {
+        width: 30%;
+    }
+    /*========= Modal end =========*/
 }
 
 @media only screen and (min-width: 1024px) {
@@ -908,6 +957,11 @@ input[type="date"]:before {
     font-size: 1.6em;
 }
 /* ========== FOOTER END ==========*/
+/* ========== Modal ==========*/
+.modal-wrap {
+    padding: 50px 20px;
+}
+/* ========== Modal end ==========*/
 }
 @media only screen and (min-width: 1200px) {
     /*========= Our story =========*/
@@ -979,10 +1033,6 @@ input[type="date"]:before {
         top: -15px;
         width: 335px;
         height: 335px;
-    }
-    .info .map:hover {
-        background-color: #b9cde2;
-        padding: 5px 20px;
     }
     /*========= General info end =========*/
 }
