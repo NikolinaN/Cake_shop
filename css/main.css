@@ -209,7 +209,7 @@ header .container {
 nav {
     display: table; 
     position: fixed;
-    top: 105px;
+    top: 116px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -290,14 +290,14 @@ nav .close {
 }
 .flex-direction-nav .flex-next {
     right: -15px;
-    z-index: -1;
+    
 }
 .flexslider:hover .flex-direction-nav .flex-next {
     right: 43px;
   }
 .flex-direction-nav .flex-prev {
     left: -21px;
-    z-index: -1;
+
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
     left: 35px;
@@ -550,7 +550,7 @@ nav .close {
     left: 0;
     background-color: rgba(0,0,0,.6);
 }
-.modal-open {
+.modal.open {
     display: block;
 }
 .modal-wrap {
@@ -611,7 +611,7 @@ input.btn {
     padding: 13px 15px;
 }
 input[type="date"]:before {
-    content: attr(placeholder);
+    content: attr(placeholder) !important;
     color: #b9cde2;
     font-style: italic;
     margin-right: 0.5em;
@@ -628,7 +628,7 @@ input[type="date"]:before {
     }
     /*============= Header =============*/
     nav {
-        top: 97px;
+        top: 116px;
     }
     /*============= Header end =============*/
 
