@@ -286,8 +286,6 @@ nav .btn {
 
 .flex-direction-nav a {
     display: block;
-    width: 100px;
-    height: 100px;
     position: relative;
 }
 .flex-direction-nav a::after,
@@ -298,7 +296,16 @@ nav .btn {
     height: 2px;
     background-color: #46938e;
 	transform: rotate(45deg);
-	left: 20px;
+    left: 20px;
+    
+}
+.flex-direction-nav .flex-next {
+    bottom: 354px;
+    left: 240px;
+}
+.flex-direction-nav .flex-prev {
+    bottom: 340px;
+    right: 30px;
 }
 .flex-direction-nav a::after {
 	top: 20px;
