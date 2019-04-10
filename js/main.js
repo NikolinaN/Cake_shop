@@ -16,6 +16,8 @@
     $window.on("load", function() {
       $('.products .flexslider').flexslider({
         animation: "slide",
+        prevText: "",
+	      nextText: "",
         animationLoop: false,
         itemWidth: 230,
         itemMargin: 30,
@@ -53,7 +55,9 @@
     if(width < 768) {
       $('.gallery .container > div').addClass('flexslider');
       $('.gallery .flexslider').flexslider({
-        animation: "slide"
+        animation: "slide",
+        prevText: "",
+	      nextText: ""
       });
   }else if(width >= 768){
     $('.gallery .container > div').removeClass('flexslider');

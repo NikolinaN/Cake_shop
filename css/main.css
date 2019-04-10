@@ -296,15 +296,22 @@ nav .btn {
     height: 2px;
     background-color: #46938e;
 	transform: rotate(45deg);
-    left: 20px;
-    
+    left: 20px; 
 }
 .flex-direction-nav .flex-next {
-    bottom: 354px;
+    bottom: 360px;
     left: 240px;
 }
 .flex-direction-nav .flex-prev {
-    bottom: 340px;
+    bottom: 360px;
+    right: 30px;
+}
+.gallery .flex-direction-nav .flex-next {
+    bottom: 160px;
+    left: 240px;
+}
+.gallery .flex-direction-nav .flex-prev {
+    bottom: 160px;
     right: 30px;
 }
 .flex-direction-nav a::after {
@@ -314,12 +321,14 @@ nav .btn {
 	top: 34px;
 	transform: rotate(-45deg);
 }
-
 a.flex-prev::after {
 	transform: rotate(-45deg);
 }
 a.flex-prev:before {
 	transform: rotate(45deg);
+}
+.flexslider .slides div:nth-child(2) {
+    margin-left: 20px;
 }
 
 /************Flexslider*********/
@@ -545,7 +554,7 @@ a.flex-prev:before {
     display: inline-flex;
 }
 .footer ul li {
-    padding: 10px;    
+    padding: 15px;    
 }
 .footer li img {
     max-width: 30px;
@@ -690,14 +699,15 @@ input[type="date"]:before {
     }
     /************Flexslider*********/
     .flex-direction-nav .flex-next {
-        right: -35px;
+        left: 670px;
     }
     .flex-direction-nav .flex-prev {
-        left: -43px;
+        right: 50px;
     }
-    .flex-control-nav li {
-        margin: 0 6px;
+    .flexslider .slides div:nth-child(2) {
+        margin-left: 0;
     }
+    
     /*========== Products end ==========*/
     /*============= Ordering process =============*/
     .ordering .container {
@@ -921,6 +931,10 @@ input[type="date"]:before {
     font-size: 3em;
 }
 /* ========== HERO END ==========*/
+/************Flexslider*********/
+.flex-direction-nav .flex-next {
+    left: 925px;
+}
 
 /* ========== ORDERING PROCESS ==========*/
 .ordering-process div {
@@ -1024,20 +1038,17 @@ input[type="date"]:before {
 /* ========== Modal end ==========*/
 }
 @media only screen and (min-width: 1200px) {
-    /*========= Our story =========*/
-    .our_story .heading-wrap {
+    /************Flexslider*********/
+    .flex-direction-nav .flex-next {
+        left: 1090px;
     }
+
+    /*========= Our story =========*/
     .our_story .container .content {
         padding-left: 100px;
     }
     .our_story .round-image {
         max-width: 35%;
-    }
-    .circle span:first-child {
-    }
-    .circle span:nth-child(2) {
-    }
-    .circle span:last-child {
     }
     .our_story p {
         font-size: 2.4em;
