@@ -111,7 +111,7 @@ section {
 }
 .container {
     max-width: 1366px;
-    padding: 30px 20px;
+    padding: 10px 20px;
     margin: 0 auto;
 }
 h2 {
@@ -179,35 +179,7 @@ a {
 header {
     padding: 13px 0 8px;
 }
-header .container {
-    margin: -20px 0;
-}
-.close {
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: block;
-    margin: 0;
-    cursor: pointer;
-}
- .close span {
-    width: 45px;
-    height: 4px;
-    background: white;
-    display: block;
-    transform: rotate(45deg);
-    border-radius: 2px;
-}
-.close span:nth-child(2) {
-    transform: rotate(-45deg);
-    position: relative;
-    top: -4px;
-    border-radius: 2px;
-}
 nav {
-    display: table; 
     position: fixed;
     top: 116px;
     left: 0;
@@ -216,9 +188,10 @@ nav {
     background: #46938e;
     text-align: center;
     color: #000000;
-    z-index: 99;
+    z-index: 99;  
     display: none;
 }
+
 nav ul {
     vertical-align: middle;
 }
@@ -232,15 +205,6 @@ nav a {
 nav .btn {
     background: #ffffff;
     font-size: 3.6em;
-}
-nav .close {
-    width: 45px;
-    height: 45px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: block;
-    margin: 0;
 }
 .header-logo {
     display: inline-block;
@@ -284,20 +248,18 @@ nav .close {
 
 /* ========== PRODUCTS ==========*/
 /************Flexslider*********/
-.flexslider .slides div {
+/* .flexslider .slides div {
     margin: 0 auto;
     max-width: 230px;
 }
 .flex-direction-nav .flex-next {
-    right: -15px;
-    
+    right: -15px;  
 }
 .flexslider:hover .flex-direction-nav .flex-next {
     right: 43px;
   }
 .flex-direction-nav .flex-prev {
     left: -21px;
-
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
     left: 35px;
@@ -305,6 +267,54 @@ nav .close {
 .flex-control-nav li {
     margin: 0 3px;
 }
+.flexslider:hover .flex-direction-nav .flex-next,
+.flexslider .flex-direction-nav .flex-next,
+.flexslider:hover .flex-direction-nav .flex-prev,
+.flexslider .flex-direction-nav .flex-prev {
+    opacity: 1;
+    right: -10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev,
+.flexslider .flex-direction-nav .flex-prev {
+    right: auto;
+    left: -10px;
+    transform: rotate(180deg);
+}
+.flexslider .flex-direction-nav a:before {
+    content: url('../img/arrow.svg');
+}  */
+
+.flex-direction-nav a {
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.flex-direction-nav a::after,
+.flex-direction-nav a::before {
+    content: '';
+	position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #46938e;
+	transform: rotate(45deg);
+	left: 20px;
+}
+.flex-direction-nav a::after {
+	top: 20px;
+}
+.flex-direction-nav a::before {
+	top: 34px;
+	transform: rotate(-45deg);
+}
+
+a.flex-prev::after {
+	transform: rotate(-45deg);
+}
+a.flex-prev:before {
+	transform: rotate(45deg);
+}
+
 /************Flexslider*********/
 /* ========== PRODUCTS END ==========*/
 
@@ -377,6 +387,9 @@ nav .close {
     left: 50%;
     transform: translate(-50%);
 }
+.our_story .img-wrap {
+    position: relative;
+}
 .our_story .img {
     max-width: 100%;
 }
@@ -384,50 +397,44 @@ nav .close {
     margin-top: 20px;
     text-align: justify;
 }
-.circle {
-    position: relative;
-    max-width: 400px;
-    height: 1px;
-}
-.circle span {
+.img-wrap span {
     position: absolute;
     background-color: #46938e;
     border-radius: 50%;
     display: block;
 }
-.circle span:first-child {
+.img-wrap span:first-child {
     height: 113px;
     width: 113px;
     opacity: .2;
-    top: -35px;
-    left: 165px;
+    right: -30px;
+    top: -30px;
     z-index: -1;
 }
-.circle span:nth-child(2) {
+.img-wrap span:nth-child(2) {
     height: 298px;
     width: 298px;
     opacity: .27;
-    bottom: -360px;
-    left: -170px;
+    top: 24%;
+    left: -68%;
     z-index: -1;
   }
-  .circle span:last-child {
+.circle{
     height: 596px;
     width: 596px;
+    position: absolute;
+    background-color: #46938e;
+    border-radius: 50%;
     opacity: .7;
-    bottom: 2135px;
-    right: -50%;
     display: none;
   }
 /* ========== OUR STORY END ==========*/
 
 /* ========== GALLERY ==========*/
-.section .gallery {
-    padding-bottom: 0;
-}
 .gallery{
     position: relative;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 .gallery .flexslider {
     margin-bottom: 0;
@@ -437,9 +444,6 @@ nav .close {
 }
 /* ========== GALLERY END ==========*/
 /* ========== GENERAL INFO ==========*/
-.general-info {
-    overflow: visible;
-}
 .info li {
     padding: 20px 0 20px;
 }
@@ -453,15 +457,19 @@ nav .close {
     font-weight: 700;
     padding-bottom: 15px;
 }
-.info .map {
+.info #map {
     font-size: 1.75em;
     font-weight: 700;
     color: #000;
 }
-.info .map:hover {
+.info #map:hover {
     background-color: #b9cde2;
     padding: 5px 20px;
 }
+/* .info #map-canvas {
+    height: 200px;
+    width: 200px;
+  } */
 .info .txt {
     margin: 0 0 20px 0;
 }
@@ -541,6 +549,30 @@ nav .close {
 /* ========== FOOTER END ==========*/
 
 /* ======== MODAL  ========== */
+.close {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 10px;/*20*/
+    right: 10px;/*20*/
+    display: block;
+    margin: 0;
+    cursor: pointer;
+}
+ .close span {
+    width: 35px; /*45*/
+    height: 2px; /*4*/
+    background: white;
+    display: block;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+.close span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -2px; /*-4*/
+    border-radius: 2px;
+}
 .modal {
     display: none;
     position: fixed;
@@ -661,6 +693,9 @@ input[type="date"]:before {
     }
     /*========== Products end ==========*/
     /*============= Ordering process =============*/
+    .ordering .container {
+        padding: 30px 20px 50px;
+    }
     .ordering-process div {
         display: inline-block;
         margin: 40px 15px 15px;
@@ -670,11 +705,12 @@ input[type="date"]:before {
 
     /*============= Our story =============*/
     .our_story {
-        overflow: visible;
-        padding: 0;
+        padding-top: 50px;
     }
     .our_story .container {
         padding: 40px 35px;
+        position: relative;
+
     }
     .our_story .container .content {
         text-align: left;
@@ -692,30 +728,35 @@ input[type="date"]:before {
         float: left;
         margin-top: 74px;
     }
-    .circle span:first-child {
-        height: 113px;
-        width: 113px;
-        top: 30px;
-        left: 158px;
+    .img-wrap span:first-child {
+        height: 150px;
+        width: 150px;
+        top: -10px;
+        right: 57%;
     }
-    .circle span:nth-child(2) {
+    .img-wrap span:nth-child(2) {
         height: 320px;
         width: 320px;
-        bottom: -455px;
-        left: -195px;
+        top: 135px;
+        left: -190px;
+    }
+    .circle {
+        display: block;
+        right: -250px;
+        top: -450px;
     }
    /*========== Our story end =========*/ 
 
    /*========= Gallery =========*/
    .gallery .images li {
-    float: right;
-    width: 50%;
-    margin-bottom: 15px;
+        float: right;
+        width: 50%;
+        margin-bottom: 15px;
    }
    .images {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
     }
     .images img {
         max-width: 350px;
@@ -752,9 +793,12 @@ input[type="date"]:before {
     .arrow {
         margin: 0 0 0 auto;
     }
-    /*========= general Info end =========*/
+    /*========= General info end =========*/
 
     /*========= Footer =========*/
+    .footer .container {
+        padding: 20px 0;
+    }
     .logo-wrap {
         display: inline-block;
         float: left;
@@ -773,6 +817,17 @@ input[type="date"]:before {
     }
     /*========= Footer =========*/
     /*========= Modal =========*/
+    .close {
+        top: 20px;
+        right: 20px;
+    }
+     .close span {
+        height: 4px; 
+        width: 45px; 
+     }
+     .close span:nth-child(2) {
+    top: -4px;
+     }
     legend {
         color: #210a12;
         font-size: 30px;
@@ -793,7 +848,23 @@ input[type="date"]:before {
     }
     /*========= Modal end =========*/
 }
-
+@media only screen and (min-width: 992px) {
+    .hero {
+        background: url(../img/background.jpg) no-repeat center center;
+        background-size: 100% auto;
+    }
+    .img-wrap span:first-child {
+        height: 170px;
+        width: 170px;
+        right: 59%;
+    }
+    .img-wrap span:nth-child(2) {
+        height: 447px;
+        width: 447px;
+        top: 148px;
+        left: -280px;
+    }
+}
 @media only screen and (min-width: 1024px) {
     h2 { 
     font-size: 3.6em;
@@ -833,10 +904,6 @@ input[type="date"]:before {
 /* ========== HEADER END ==========*/
 
 /* ========== HERO ==========*/
-.hero {
-    background: url(../img/background.jpg) no-repeat center center;
-    background-size: 100% auto;
-}
 .hero p {
     margin: 60px 0 35px 20px;
     font-size: 3.6em;
@@ -860,8 +927,7 @@ input[type="date"]:before {
 
 /* ========== OUR STORY ==========*/
 .our_story {
-    overflow: hidden;
-    padding: 100px 0;
+    padding: 70px 0;
 }
 .our_story .content {
     position: relative;
@@ -873,23 +939,12 @@ input[type="date"]:before {
 .our_story .container .content {
     width: 56%;
 }
-.circle span:first-child {
-    height: 226px;
-    width: 226px;
-    top: -55px;
-    left: 270px;
+.img-wrap span:first-child {
+    right: 53%;
 }
-.circle span:nth-child(2) {
-    height: 596px;
-    width: 596px;
-    bottom: -710px;
-    left: -370px;
-}
-.circle span:last-child {
-    bottom: -80px;
-    right: -840px;
-    display: block;
-    z-index: -1;
+.img-wrap span:nth-child(2) {
+    top: 147px;
+    left: -210px;
 }
 .our_story .round-image {
     margin: 65px 0 0 60px;
@@ -906,9 +961,7 @@ input[type="date"]:before {
 }
 /* ========== OUR STORY END ==========*/
 /* ========== GALLERY ==========*/
-.gallery {
-    overflow: hidden;
-}
+
 .gallery .images li {
     width: 33.3%;
 }
@@ -974,15 +1027,10 @@ input[type="date"]:before {
         max-width: 35%;
     }
     .circle span:first-child {
-        left: 325px;
     }
     .circle span:nth-child(2) {
-        bottom: -740px;
-        left: -340px;
     }
     .circle span:last-child {
-        right: -1100px;
-        bottom: -120px;
     }
     .our_story p {
         font-size: 2.4em;
@@ -1003,9 +1051,7 @@ input[type="date"]:before {
     /*========= Gallery end =========*/
 
     /*========= General info =========*/
-    .general-info {
-        overflow: hidden;
-    }
+   
     .general-info h2 {
         margin-bottom: 60px;
     }
@@ -1035,30 +1081,6 @@ input[type="date"]:before {
         height: 335px;
     }
     /*========= General info end =========*/
-}
-@media only screen and (min-width: 1500px) {
-    .our_story .heading-wrap {
-        margin-left: 100px;
-    }
-    .our_story .container .content {
-        margin-left: 100px;
-    }
-}
-@media only screen and (min-width: 1600px) {
-    .our_story .heading-wrap {
-        margin-left: 170px;
-    }
-    .our_story .container .content {
-        margin-left: 170px;
-    }
-}
-@media only screen and (min-width: 1800px) {
-    .our_story .heading-wrap {
-        margin-left: 250px;
-    }
-    .our_story .container .content {
-        margin-left: 250px;
-    }
 }
 /* ==========================================================================
    Helper classes

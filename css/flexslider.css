@@ -124,7 +124,7 @@ html[xmlns] .flexslider .slides {
 .carousel li {
   margin-right: 10px;
 }
-.flex-direction-nav {
+/* .flex-direction-nav {
   *height: 0;
 }
 .flex-direction-nav a {
@@ -154,7 +154,7 @@ html[xmlns] .flexslider .slides {
   content: '\f001';
   color: #46938e;
   /*text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);*/
-}
+/* }
 .flex-direction-nav a.flex-next:before {
   content: '\f002';
 }
@@ -166,8 +166,8 @@ html[xmlns] .flexslider .slides {
   top: 100px;
   right: -50px;
   text-align: right;
-}
-.flexslider:hover .flex-direction-nav .flex-prev {
+} */
+/* .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
   left: 10px;
 }
@@ -186,7 +186,7 @@ html[xmlns] .flexslider .slides {
   filter: alpha(opacity=0);
   cursor: default;
   z-index: -1;
-}
+} */
 .flex-pauseplay a {
   display: block;
   width: 20px;
@@ -281,7 +281,7 @@ html[xmlns] .flexslider .slides {
  * RESPONSIVE
  * ====================================================================================================================*/
 @media screen and (max-width: 860px) {
-  .flex-direction-nav .flex-prev {
+  /* .flex-direction-nav .flex-prev {
     opacity: 1;
     left: -40px;
   }
@@ -289,15 +289,15 @@ html[xmlns] .flexslider .slides {
     opacity: 1;
     right: -20px;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) {
-  .flex-direction-nav .flex-prev {
+  /* .flex-direction-nav .flex-prev {
     left: -35px;
   }
   .flex-direction-nav .flex-next {
     right: -27px;
-  }
+  } */
   .flex-control-paging li a {
     width: 15px;
     height: 15px;

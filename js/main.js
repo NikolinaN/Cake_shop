@@ -13,10 +13,6 @@
 
     }
    
-    // $(function() {
-    //   SyntaxHighlighter.all();
-    // });
-   
     $window.on("load", function() {
       $('.products .flexslider').flexslider({
         animation: "slide",
@@ -64,7 +60,7 @@
   }
   });
  /*********** Navigation ***********/
-	$('.burger').on('click', function(){
+	$('.burger, nav a').on('click', function(){
     $('.nav').slideToggle(500);
    });
 /*********** Navigation ***********/
@@ -120,3 +116,17 @@ $('.modal .close').on('click', function(event) {
 	$('.modal').removeClass('open');
 });
 /*********** Modal ***********/
+
+/*********** Map ***********/
+// var showMap = $('#map');
+// function initialize() {
+//     var mapOptions = {
+// 	    center: { lat: 0, lng: 0 },
+// 	    zoom: 8
+// 	};
+// 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+// }
+// $(document).ready(function(){
+//     $('#map').on('click',initialize)
+// });
+/*********** Map ***********/
