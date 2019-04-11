@@ -299,11 +299,11 @@ nav .btn {
     left: 20px; 
 }
 .flex-direction-nav .flex-next {
-    bottom: 360px;
+    bottom: 325px;
     left: 240px;
 }
 .flex-direction-nav .flex-prev {
-    bottom: 360px;
+    bottom: 325px;
     right: 30px;
 }
 .gallery .flex-direction-nav .flex-next {
@@ -485,6 +485,7 @@ a.flex-prev:before {
 /* .info #map-canvas {
     height: 200px;
     width: 200px;
+    margin: 10px auto 0 auto;
   } */
 .info .txt {
     margin: 0 0 20px 0;
@@ -569,15 +570,15 @@ a.flex-prev:before {
     width: 45px;
     height: 45px;
     position: absolute;
-    top: 10px;/*20*/
-    right: 10px;/*20*/
+    top: 10px;
+    right: 10px;
     display: block;
     margin: 0;
     cursor: pointer;
 }
  .close span {
-    width: 35px; /*45*/
-    height: 2px; /*4*/
+    width: 35px;
+    height: 2px; 
     background: white;
     display: block;
     transform: rotate(45deg);
@@ -807,19 +808,15 @@ input[type="date"]:before {
         top: -50px;
         left: -90px;
     }
-    .arrow {
-        margin: 0 0 0 auto;
-    }
     /*========= General info end =========*/
 
     /*========= Footer =========*/
     .footer .container {
-        padding: 20px 0;
+        padding: 0 0 70px 0;
     }
     .logo-wrap {
-        display: inline-block;
         float: left;
-        padding: 0 100px 0 50px;
+        margin-left: 50px;
     }
     .footer p{
         font-size: 1.4em;
@@ -827,10 +824,12 @@ input[type="date"]:before {
         padding: 17px 0 0 10px;
     }
     .footer ul li {
-        display: inline-block;
+        float: left;
+        padding: 10px 0 0 25px;
     }
     .footer ul {
-        padding-top: 10px;
+        float: right;
+        margin-right: 50px;
     }
     /*========= Footer =========*/
     /*========= Modal =========*/
@@ -880,6 +879,9 @@ input[type="date"]:before {
         width: 447px;
         top: 148px;
         left: -280px;
+    }
+    .flex-direction-nav .flex-next {
+        left: 892px;
     }
 }
 @media only screen and (min-width: 1024px) {
@@ -1016,7 +1018,6 @@ input[type="date"]:before {
 }
 .info li {
     display: inline-table;
-    width: calc(33.333% - 35px);
 }
 .arrow{
     width: 57px;
@@ -1024,9 +1025,6 @@ input[type="date"]:before {
 /* ========== GENERAL INFO END ==========*/
 
 /* ========== FOOTER ==========*/
-.logo-wrap {
-    padding: 0 200px 0 100px;
-}
 .footer p{
     font-size: 1.6em;
 }
@@ -1040,9 +1038,11 @@ input[type="date"]:before {
 @media only screen and (min-width: 1200px) {
     /************Flexslider*********/
     .flex-direction-nav .flex-next {
-        left: 1090px;
+        left: 1097px;
     }
-
+    .flexslider .slides div:nth-child(2) {
+        margin-left: 10px;
+    }
     /*========= Our story =========*/
     .our_story .container .content {
         padding-left: 100px;
@@ -1052,6 +1052,13 @@ input[type="date"]:before {
     }
     .our_story p {
         font-size: 2.4em;
+    }
+    .img-wrap span:first-child {
+        right: 58%;
+    }
+    .img-wrap span:nth-child(2) {
+        top: 180px;
+        left: -150px;
     }
     /*========= Our story end =========*/
 
