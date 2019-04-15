@@ -286,7 +286,7 @@ nav .btn {
 
 .flex-direction-nav a {
     display: block;
-    position: relative;
+    position: absolute;
 }
 .flex-direction-nav a::after,
 .flex-direction-nav a::before {
@@ -300,19 +300,19 @@ nav .btn {
 }
 .flex-direction-nav .flex-next {
     bottom: 325px;
-    left: 240px;
+    right: 25px;
 }
 .flex-direction-nav .flex-prev {
     bottom: 325px;
-    right: 30px;
+    left: -35px;
 }
 .gallery .flex-direction-nav .flex-next {
     bottom: 160px;
-    left: 240px;
+    right: 25px;
 }
 .gallery .flex-direction-nav .flex-prev {
     bottom: 160px;
-    right: 30px;
+    left: -35px;
 }
 .flex-direction-nav a::after {
 	top: 20px;
@@ -330,7 +330,6 @@ a.flex-prev:before {
 .flexslider .slides div:nth-child(2) {
     margin-left: 20px;
 }
-
 /************Flexslider*********/
 /* ========== PRODUCTS END ==========*/
 
@@ -699,16 +698,15 @@ input[type="date"]:before {
         padding: 30px 40px;
     }
     /************Flexslider*********/
-    .flex-direction-nav .flex-next {
-        left: 670px;
-    }
-    .flex-direction-nav .flex-prev {
-        right: 50px;
-    }
     .flexslider .slides div:nth-child(2) {
         margin-left: 0;
     }
-    
+    .flex-direction-nav .flex-next {
+        right: 7px;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -55px;
+    }
     /*========== Products end ==========*/
     /*============= Ordering process =============*/
     .ordering .container {
@@ -880,9 +878,6 @@ input[type="date"]:before {
         top: 148px;
         left: -280px;
     }
-    .flex-direction-nav .flex-next {
-        left: 892px;
-    }
 }
 @media only screen and (min-width: 1024px) {
     h2 { 
@@ -934,9 +929,7 @@ input[type="date"]:before {
 }
 /* ========== HERO END ==========*/
 /************Flexslider*********/
-.flex-direction-nav .flex-next {
-    left: 925px;
-}
+
 
 /* ========== ORDERING PROCESS ==========*/
 .ordering-process div {
@@ -1037,11 +1030,14 @@ input[type="date"]:before {
 }
 @media only screen and (min-width: 1200px) {
     /************Flexslider*********/
-    .flex-direction-nav .flex-next {
-        left: 1097px;
-    }
     .flexslider .slides div:nth-child(2) {
         margin-left: 10px;
+    }
+    .flex-direction-nav .flex-next {
+        right: 15px;
+    }
+    .flex-direction-nav .flex-prev {
+        left: -50px;
     }
     /*========= Our story =========*/
     .our_story .container .content {
