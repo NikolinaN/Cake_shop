@@ -181,7 +181,7 @@ header {
 }
 nav {
     position: fixed;
-    top: 116px;
+    top: 109px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -638,12 +638,6 @@ input[type="date"]:before {
     h2 {
         font-size: 3.6em;
     }
-    /*============= Header =============*/
-    nav {
-        top: 116px;
-    }
-    /*============= Header end =============*/
-
     /*========== Hero ==========*/
     .hero p {
         font-size: 3em;
