@@ -7,7 +7,7 @@
    
     // tiny helper function to add breakpoints
     function getGridSize() {
-      return (window.innerWidth < 400) ? 1 :
+      return (window.innerWidth < 500) ? 1 :
              (window.innerWidth < 600) ? 2 :
              (window.innerWidth < 900) ? 3 : 4;
 

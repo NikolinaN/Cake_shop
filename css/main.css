@@ -174,6 +174,7 @@ a {
 .order:hover {
     background-color: #b9cde2;
     border: 1px solid #46938e;
+    cursor: pointer;
 }
 /*=============HEADER=============*/
 header {
@@ -292,7 +293,8 @@ a.flex-prev:before {
 	transform: rotate(45deg);
 }
 .flexslider .slides div:nth-child(2) {
-    margin-left: 20px;
+    max-width: 230px;
+    margin: 0 auto;
 }
 /************Flexslider*********/
 /* ========== PRODUCTS END ==========*/
@@ -358,7 +360,8 @@ a.flex-prev:before {
     display: block;
     overflow: hidden;
     border-radius: 50%;
-    max-width: 100%;
+    max-width: 230px;
+    margin: 0 auto;
 }
 .our_story .heading-wrap {
     position: absolute;
@@ -368,6 +371,8 @@ a.flex-prev:before {
 }
 .our_story .img-wrap {
     position: relative;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .our_story .img {
     max-width: 100%;
@@ -444,6 +449,7 @@ a.flex-prev:before {
 .info #map:hover {
     background-color: #b9cde2;
     padding: 5px 20px;
+    cursor: pointer;
 }
 /* .info #map-canvas {
     height: 200px;
@@ -525,6 +531,7 @@ a.flex-prev:before {
 }
 .footer li a:hover {
     color: #70c0e5;
+    cursor: pointer;
 }
 /* ========== FOOTER END ==========*/
 
@@ -550,7 +557,7 @@ a.flex-prev:before {
 .close span:nth-child(2) {
     transform: rotate(-45deg);
     position: relative;
-    top: -2px; /*-4*/
+    top: -2px;
     border-radius: 2px;
 }
 .modal {
@@ -656,9 +663,6 @@ input[type="date"]:before {
         padding: 30px 40px;
     }
     /************Flexslider*********/
-    .flexslider .slides div:nth-child(2) {
-        margin-left: 0;
-    }
     .flex-direction-nav .flex-next {
         right: 7px;
     }
@@ -697,8 +701,10 @@ input[type="date"]:before {
         transform: unset;
         position: unset;
     }
+    .our_story .img-wrap {
+        max-width: 100%;
+    }
     .our_story .round-image {
-        width: 36%;
         float: left;
         margin-top: 74px;
     }
@@ -865,6 +871,7 @@ input[type="date"]:before {
         color: #46938e;
         border-top: 1px solid #46938e;
         border-bottom: 1px solid #46938e;
+        cursor: pointer;
     }
     nav a {
         font-size: 1.8em;
@@ -923,7 +930,8 @@ input[type="date"]:before {
 }
 .our_story .round-image {
     margin: 65px 0 0 60px;
-}
+    max-width: 33%;
+}   
 .our_story h5 {
     font-size: 3em;
 }
@@ -989,9 +997,6 @@ input[type="date"]:before {
 }
 @media only screen and (min-width: 1200px) {
     /************Flexslider*********/
-    .flexslider .slides div:nth-child(2) {
-        margin-left: 10px;
-    }
     .flex-direction-nav .flex-next {
         right: 15px;
     }
@@ -1001,9 +1006,6 @@ input[type="date"]:before {
     /*========= Our story =========*/
     .our_story .container .content {
         padding-left: 100px;
-    }
-    .our_story .round-image {
-        max-width: 35%;
     }
     .our_story p {
         font-size: 2.4em;
@@ -1061,12 +1063,6 @@ input[type="date"]:before {
         height: 335px;
     }
     /*========= General info end =========*/
-}
-
-@media only screen and (min-width: 1300px){
-    .flexslider .slides div:nth-child(2) {
-        margin-left: 25px;
-    }
 }
 /* ==========================================================================
    Helper classes
