@@ -122,26 +122,14 @@ $('.modal .close').on('click', function(event) {
 /*********** Modal ***********/
 
 /*********** Map ***********/
-// var showMap = $('#map');
-// function initialize() {
-//     var mapOptions = {
-// 	    center: { lat: 0, lng: 0 },
-// 	    zoom: 8
-// 	};
-// 	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-// }
-// $(document).ready(function(){
-//     $('#map').on('click',initialize)
-// });
-/*********** Map ***********/
-
 function mapsSelector() {
   if /* if we're on iOS, open in Apple Maps */
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPod") != -1) || 
      (navigator.platform.indexOf("iPad") != -1))
-    window.open("maps://maps.google.com/maps?daddr=doe,meadow&amp;ll=");
+    window.open("maps://maps.google.com/maps/dir//Doe+Meadow+Dr,+Reisterstown,+MD+21117,+Сједињене+Државе/@39.4503472,-76.7999767,15z/data=");
 
   else /* else use Google */
-    window.open("https://maps.google.com/maps?daddr=doe,meadow&amp;ll=");
+    window.open("https://maps.google.com/maps/dir//Doe+Meadow+Dr,+Reisterstown,+MD+21117,+Сједињене+Државе/@39.4503472,-76.7999767,15z/data=");
 }
+/*********** Map ***********/
