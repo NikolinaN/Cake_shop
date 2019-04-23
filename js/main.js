@@ -127,9 +127,9 @@ function mapsSelector() {
     ((navigator.platform.indexOf("iPhone") != -1) || 
      (navigator.platform.indexOf("iPod") != -1) || 
      (navigator.platform.indexOf("iPad") != -1))
-    window.open("maps://maps.google.com/maps/dir//Doe+Meadow+Dr,+Reisterstown,+MD+21117,+Сједињене+Државе/@39.4503472,-76.7999767,15z/data=");
+     window.open("maps://maps.google.com/maps/dir/?daddr=32.586929,-97.296669&amp;ll=");
 
   else /* else use Google */
-    window.open("https://maps.google.com/maps/dir//Doe+Meadow+Dr,+Reisterstown,+MD+21117,+Сједињене+Државе/@39.4503472,-76.7999767,15z/data=");
+  window.open("https://maps.google.com/maps/dir/?daddr=32.586929,-97.296669&amp;ll=");
 }
 /*********** Map ***********/
