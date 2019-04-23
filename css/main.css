@@ -181,7 +181,7 @@ header {
     padding: 13px 0 0;
 }
 nav {
-    position: fixed;
+    position: absolute;
     top: 109px;
     left: 0;
     width: 100%;
@@ -451,11 +451,6 @@ a.flex-prev:before {
     padding: 5px 20px;
     cursor: pointer;
 }
-/* .info #map-canvas {
-    height: 200px;
-    width: 200px;
-    margin: 10px auto 0 auto;
-  } */
 .info .txt {
     margin: 0 0 20px 0;
 }
